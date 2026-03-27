@@ -96,6 +96,7 @@ const ContactSection = () => {
                 <option>Wires</option>
                 <option>Profiles</option>
                 <option>Bright Bars</option>
+                <option>Seamless Pipes & Tubes</option>
                 <option>Multiple Products</option>
               </select>
             </div>
