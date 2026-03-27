@@ -55,7 +55,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-display font-semibold text-foreground">Address</p>
-                  <p className="text-muted-foreground text-sm">India</p>
+                  <p className="text-muted-foreground text-sm">102/A-Wing, Saipooja Apt, Trivedi Nagar, Saravali, Boisar - 401501</p>
                 </div>
               </div>
             </div>
