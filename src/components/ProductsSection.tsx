@@ -92,13 +92,23 @@ const ProductsSection = () => {
               </div>
               <div className="p-6">
                 <p className="text-sm text-muted-foreground mb-4">{p.desc}</p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mb-4">
                   {p.specs.map((s) => (
                     <span key={s} className="text-xs px-3 py-1 rounded-full bg-primary/10 text-primary font-medium">
                       {s}
                     </span>
                   ))}
                 </div>
+                {p.catalogue && (
+                  <a
+                    href={p.catalogue}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-semibold text-ember hover:text-ember-glow transition-colors"
+                  >
+                    <Download className="w-4 h-4" /> Download Catalogue
+                  </a>
+                )}
               </div>
             </motion.div>
           ))}
