@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { Download } from "lucide-react";
 import flangesImg from "@/assets/flanges.jpg";
 import fastenersImg from "@/assets/fasteners.jpg";
 import wiresImg from "@/assets/wires.jpg";
@@ -12,30 +13,35 @@ const products = [
     desc: "Weld neck, slip-on, blind, socket weld, and threaded flanges in all grades including 304, 316, 321, and duplex.",
     image: flangesImg,
     specs: ["ASTM A182", "ANSI B16.5", "DIN Standards"],
+    catalogue: "/catalogues/Flanges.pdf",
   },
   {
     name: "Stainless Steel Fasteners",
     desc: "Bolts, nuts, screws, washers, studs and threaded rods manufactured to exact international specifications.",
     image: fastenersImg,
     specs: ["ASTM A193/A194", "DIN 931/934", "ISO 4014"],
+    catalogue: null,
   },
   {
     name: "Stainless Steel Wires",
-    desc: "Cold drawn wires in various gauges for industrial, construction, and specialized applications.",
+    desc: "Wire rods and wires from 0.09mm to 39.5mm for ship building, medical, agriculture, springs, fasteners, welding and more.",
     image: wiresImg,
-    specs: ["ASTM A580", "Bright & Annealed", "Custom Gauges"],
+    specs: ["ASTM A580", "Bright & Annealed", "0.09–39.5mm Range"],
+    catalogue: "/catalogues/Wires.pdf",
   },
   {
     name: "Stainless Steel Profiles",
-    desc: "Angles, channels, T-bars, I-beams, and custom profiles for structural and architectural use.",
+    desc: "Drawn flat bars, angles, channels, T-bars, and custom profiles in 304, 316, 321 and duplex grades.",
     image: profilesImg,
     specs: ["Hot & Cold Rolled", "Custom Sections", "Mill Finish"],
+    catalogue: "/catalogues/Profiles.pdf",
   },
   {
     name: "Bright Bars",
-    desc: "Precision-ground and polished bright bars in round, hexagonal, and square sections with superior surface finish.",
+    desc: "Precision-ground and polished bright bars in round, hexagonal, square, and forged sections with h9/h11 tolerance.",
     image: brightBarsImg,
-    specs: ["h9/h11 Tolerance", "Mirror Finish", "Custom Lengths"],
+    specs: ["h9/h11 Tolerance", "2–600mm Range", "100% UT Tested"],
+    catalogue: "/catalogues/Bright_bars.pdf",
   },
 ];
 
