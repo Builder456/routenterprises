@@ -1,12 +1,22 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ShieldCheck, Award, FileCheck, BadgeCheck } from "lucide-react";
+import { Download } from "lucide-react";
+import certGst from "@/assets/cert-gst.jpg";
+import certIec from "@/assets/cert-iec.jpg";
 
 const certificates = [
-  { icon: ShieldCheck, name: "ISO 9001:2015", desc: "Quality Management System certified for consistent product quality." },
-  { icon: Award, name: "ISO 14001:2015", desc: "Environmental Management System ensuring sustainable practices." },
-  { icon: FileCheck, name: "CE Marking", desc: "Products conforming to European health, safety, and environmental standards." },
-  { icon: BadgeCheck, name: "PED 2014/68/EU", desc: "Pressure Equipment Directive compliance for critical applications." },
+  {
+    name: "GST Registration",
+    desc: "Government of India GST Registration Certificate (GSTIN: 27FMFPR2633G1ZW)",
+    image: certGst,
+    pdf: "/certificates/GST-Certificate.pdf",
+  },
+  {
+    name: "Importer-Exporter Code",
+    desc: "DGFT Importer-Exporter Code (IEC: FMFPR2633G) issued by Ministry of Commerce & Industry",
+    image: certIec,
+    pdf: "/certificates/IEC-Certificate.pdf",
+  },
 ];
 
 const CertificatesSection = () => {
@@ -29,22 +39,39 @@ const CertificatesSection = () => {
             Quality You Can Trust
           </h2>
           <p className="text-primary-foreground/60 text-lg max-w-2xl mx-auto">
-            Our products meet the highest international standards and certifications. Please re-upload your certificates PDF to display them here.
+            Our company holds all necessary certifications and registrations for international export of stainless steel products.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {certificates.map((c, i) => (
             <motion.div
               key={c.name}
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.15 * i, duration: 0.5 }}
-              className="bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-lg p-8 text-center hover:bg-primary-foreground/10 transition-colors"
+              className="bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-lg overflow-hidden hover:bg-primary-foreground/10 transition-colors"
             >
-              <c.icon className="w-12 h-12 text-ember-glow mx-auto mb-4" />
-              <h3 className="font-display font-bold text-primary-foreground text-lg mb-2">{c.name}</h3>
-              <p className="text-sm text-primary-foreground/60">{c.desc}</p>
+              <div className="relative aspect-[3/4] overflow-hidden bg-white">
+                <img
+                  src={c.image}
+                  alt={c.name}
+                  loading="lazy"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="font-display font-bold text-primary-foreground text-lg mb-2">{c.name}</h3>
+                <p className="text-sm text-primary-foreground/60 mb-4">{c.desc}</p>
+                <a
+                  href={c.pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-semibold text-ember-glow hover:text-ember transition-colors"
+                >
+                  <Download className="w-4 h-4" /> Download PDF
+                </a>
+              </div>
             </motion.div>
           ))}
         </div>
