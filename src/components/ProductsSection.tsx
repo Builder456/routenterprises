@@ -6,6 +6,7 @@ import fastenersImg from "@/assets/fasteners.jpg";
 import wiresImg from "@/assets/wires.jpg";
 import profilesImg from "@/assets/profiles.jpg";
 import brightBarsImg from "@/assets/bright-bars.jpg";
+import seamlessPipesImg from "@/assets/seamless-pipes.jpg";
 
 const products = [
   {
@@ -42,6 +43,13 @@ const products = [
     image: brightBarsImg,
     specs: ["h9/h11 Tolerance", "2–600mm Range", "100% UT Tested"],
     catalogue: "/catalogues/Bright_bars.pdf",
+  },
+  {
+    name: "Seamless Pipes & Tubes",
+    desc: "High-quality seamless stainless steel pipes and tubes for oil & gas, chemical, petrochemical, and power industries.",
+    image: seamlessPipesImg,
+    specs: ["ASTM A312/A213", "304/316/321 Grades", "Custom Lengths"],
+    catalogue: null,
   },
 ];
 

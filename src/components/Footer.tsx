@@ -18,6 +18,7 @@ const Footer = () => (
             <li>SS Wires</li>
             <li>SS Profiles</li>
             <li>Bright Bars</li>
+            <li>Seamless Pipes & Tubes</li>
           </ul>
         </div>
         <div>
