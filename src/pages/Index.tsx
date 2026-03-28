@@ -10,13 +10,17 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => (
   <div className="min-h-screen">
-    <Navbar />
-    <HeroSection />
-    <AboutSection />
-    <ProductsSection />
-    <CertificatesSection />
-    <TestimonialsSection />
-    <ContactSection />
+    <header>
+      <Navbar />
+    </header>
+    <main>
+      <HeroSection />
+      <AboutSection />
+      <ProductsSection />
+      <CertificatesSection />
+      <TestimonialsSection />
+      <ContactSection />
+    </main>
     <Footer />
     <WhatsAppButton />
   </div>
