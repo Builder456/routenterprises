@@ -14,9 +14,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-primary-foreground/10">
+    <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-primary-foreground/10">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="#home" className="font-display text-xl font-bold text-primary-foreground tracking-tight">
+        <a href="#home" aria-label="Rout Enterprises - Home" className="font-display text-xl font-bold text-primary-foreground tracking-tight">
           ROUT <span className="text-ember-glow">ENTERPRISES</span>
         </a>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button onClick={() => setOpen(!open)} className="md:hidden text-primary-foreground">
+        <button onClick={() => setOpen(!open)} aria-label="Toggle navigation menu" aria-expanded={open} className="md:hidden text-primary-foreground">
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
       </div>
