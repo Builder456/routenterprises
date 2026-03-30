@@ -1,7 +1,7 @@
 const Footer = () => (
   <footer className="bg-steel-dark py-12" role="contentinfo">
     <div className="container mx-auto px-4">
-      <div className="grid md:grid-cols-3 gap-8 mb-8">
+      <div className="grid md:grid-cols-4 gap-8 mb-8">
         <div>
           <h3 className="font-display text-xl font-bold text-primary-foreground mb-3">
             ROUT <span className="text-ember-glow">ENTERPRISES</span>
@@ -29,6 +29,21 @@ const Footer = () => (
             <li><a href="#certificates" className="hover:text-ember-glow transition-colors">Certificates</a></li>
             <li><a href="#contact" className="hover:text-ember-glow transition-colors">Contact</a></li>
           </ul>
+        </div>
+        <div>
+          <h4 className="font-display font-semibold text-primary-foreground mb-3">Our Location</h4>
+          <div className="rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3752.5!2d72.758!3d19.8074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sBoisar%2C+Maharashtra+401501!5e0!3m2!1sen!2sin!4v1700000000000"
+              width="100%"
+              height="180"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Rout Enterprises Location - Boisar, Maharashtra"
+            />
+          </div>
         </div>
       </div>
       <div className="border-t border-primary-foreground/10 pt-6 text-center">
