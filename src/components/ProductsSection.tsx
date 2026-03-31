@@ -113,6 +113,12 @@ const ProductsSection = () => {
                     </span>
                   ))}
                 </div>
+                {p.grades && (
+                  <div className="mb-4">
+                    <p className="text-xs font-semibold text-foreground mb-1">Available Grades:</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{p.grades}</p>
+                  </div>
+                )}
                 {p.catalogue && (
                   <a
                     href={p.catalogue}
