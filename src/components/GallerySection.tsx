@@ -6,12 +6,26 @@ import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
 import gallery4 from "@/assets/gallery-4.jpg";
 import gallery5 from "@/assets/gallery-5.jpg";
+import galleryAngles1 from "@/assets/gallery-angles-1.jpeg";
+import galleryWireRods from "@/assets/gallery-wire-rods.jpg";
+import galleryAngles2 from "@/assets/gallery-angles-2.jpeg";
+import galleryHexBars from "@/assets/gallery-hex-bars.jpeg";
+import galleryRoundBars from "@/assets/gallery-round-bars.jpeg";
+import galleryFasteners1 from "@/assets/gallery-fasteners-1.jpeg";
+import galleryFasteners2 from "@/assets/gallery-fasteners-2.jpeg";
 
 const images = [
   { src: gallery1, alt: "Stainless steel flanges stacked on pallets in factory" },
   { src: gallery2, alt: "Large stainless steel ring flanges close-up" },
+  { src: galleryFasteners1, alt: "Stainless steel bolts, nuts and washers collection" },
+  { src: galleryWireRods, alt: "Stainless steel wire rods coils" },
   { src: gallery3, alt: "Precision machined stainless steel plate flanges" },
+  { src: galleryAngles1, alt: "Stainless steel angle profiles stacked" },
+  { src: galleryHexBars, alt: "Stainless steel hexagonal bright bars bundle" },
   { src: gallery4, alt: "Bulk stainless steel weld neck flanges production" },
+  { src: galleryFasteners2, alt: "Stainless steel nuts and bolts close-up" },
+  { src: galleryAngles2, alt: "Stainless steel equal angle profiles" },
+  { src: galleryRoundBars, alt: "Stainless steel round bright bars" },
   { src: gallery5, alt: "Slip-on stainless steel flanges arranged on pallets" },
 ];
 
