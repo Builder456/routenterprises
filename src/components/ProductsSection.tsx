@@ -19,10 +19,13 @@ const products = [
   },
   {
     name: "Stainless Steel Fasteners",
-    desc: "Bolts, nuts, screws, washers, studs and threaded rods manufactured to exact international specifications for critical applications.",
+    desc: "Bolts, nuts, screws, washers, studs, threaded rods and dowel screws. Available in standard to heavy-duty applications with precision engineering for critical fastening solutions.",
     image: fastenersImg,
-    specs: ["ASTM A193/A194", "DIN 931/934 / ISO 4014"],
+    specs: ["ASTM A193/A194", "DIN 931/934 / ISO 4014", "ANSI B18.6.3"],
     grades: "304, 304L, 316, 316L, 321, 410, 430, Duplex",
+    applications: "Construction, Petrochemical, Oil & Gas, Marine, Power Generation, Food Processing, Pharmaceutical, Furniture & Interiors",
+    testing: "Tensile Test, Impact Test, Hardness Test, IGC Test",
+    certifications: "ISO 9001:2015, CE, EN-ISO 10204-3.2, ISO 14001:2015, ISO 45001:2018, IS 1364, ADW2/PED, TUV, BIS",
     catalogue: "/catalogues/Fasteners.pdf",
   },
   {
