@@ -23,7 +23,7 @@ const products = [
     image: fastenersImg,
     specs: ["ASTM A193/A194", "DIN 931/934 / ISO 4014"],
     grades: "304, 304L, 316, 316L, 321, 410, 430, Duplex",
-    catalogue: null,
+    catalogue: "/catalogues/Fasteners.pdf",
   },
   {
     name: "Stainless Steel Wires",
