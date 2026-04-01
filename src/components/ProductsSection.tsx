@@ -117,9 +117,27 @@ const ProductsSection = () => {
                   ))}
                 </div>
                 {p.grades && (
-                  <div className="mb-4">
+                  <div className="mb-3">
                     <p className="text-xs font-semibold text-foreground mb-1">Available Grades:</p>
                     <p className="text-xs text-muted-foreground leading-relaxed">{p.grades}</p>
+                  </div>
+                )}
+                {p.applications && (
+                  <div className="mb-3">
+                    <p className="text-xs font-semibold text-foreground mb-1">Applications:</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{p.applications}</p>
+                  </div>
+                )}
+                {p.testing && (
+                  <div className="mb-3">
+                    <p className="text-xs font-semibold text-foreground mb-1">Testing Facilities:</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{p.testing}</p>
+                  </div>
+                )}
+                {p.certifications && (
+                  <div className="mb-4">
+                    <p className="text-xs font-semibold text-foreground mb-1">Certifications:</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{p.certifications}</p>
                   </div>
                 )}
                 {p.catalogue && (
