@@ -1,16 +1,52 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const name = (formData.get("name") as string)?.trim();
+    const email = (formData.get("email") as string)?.trim();
+    const product = (formData.get("product") as string)?.trim();
+    const message = (formData.get("message") as string)?.trim();
+
+    if (!name || !email || !product || !message) return;
+
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke("send-contact-email", {
+        body: { name, email, product, message },
+      });
+
+      if (error) throw error;
+
+      setSubmitted(true);
+      form.reset();
+      toast({
+        title: "Inquiry Sent!",
+        description: "A confirmation email has been sent to your inbox.",
+      });
+      setTimeout(() => setSubmitted(false), 4000);
+    } catch (err) {
+      console.error("Failed to send inquiry:", err);
+      toast({
+        title: "Failed to send",
+        description: "Something went wrong. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -74,6 +110,7 @@ const ContactSection = () => {
                 <label className="text-sm font-medium text-foreground mb-1.5 block">Name</label>
                 <input
                   required
+                  name="name"
                   type="text"
                   className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ember/50"
                   placeholder="Your name"
@@ -83,6 +120,7 @@ const ContactSection = () => {
                 <label className="text-sm font-medium text-foreground mb-1.5 block">Email</label>
                 <input
                   required
+                  name="email"
                   type="email"
                   className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ember/50"
                   placeholder="your@email.com"
@@ -91,7 +129,10 @@ const ContactSection = () => {
             </div>
             <div>
               <label className="text-sm font-medium text-foreground mb-1.5 block">Product Interest</label>
-              <select className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ember/50">
+              <select
+                name="product"
+                className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ember/50"
+              >
                 <option>Flanges</option>
                 <option>Fasteners</option>
                 <option>Wires</option>
@@ -105,6 +146,7 @@ const ContactSection = () => {
               <label className="text-sm font-medium text-foreground mb-1.5 block">Message</label>
               <textarea
                 required
+                name="message"
                 rows={4}
                 className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ember/50 resize-none"
                 placeholder="Tell us about your requirements..."
@@ -112,9 +154,16 @@ const ContactSection = () => {
             </div>
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 bg-ember hover:bg-ember-glow text-primary-foreground py-3 rounded-md font-display font-semibold transition-all hover:scale-[1.02]"
+              disabled={loading}
+              className="w-full flex items-center justify-center gap-2 bg-ember hover:bg-ember-glow text-primary-foreground py-3 rounded-md font-display font-semibold transition-all hover:scale-[1.02] disabled:opacity-70 disabled:hover:scale-100"
             >
-              {submitted ? "Message Sent! ✓" : <><Send className="w-4 h-4" /> Send Inquiry</>}
+              {loading ? (
+                <><Loader2 className="w-4 h-4 animate-spin" /> Sending...</>
+              ) : submitted ? (
+                "Message Sent! ✓"
+              ) : (
+                <><Send className="w-4 h-4" /> Send Inquiry</>
+              )}
             </button>
           </motion.form>
         </div>
