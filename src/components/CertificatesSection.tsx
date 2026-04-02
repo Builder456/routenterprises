@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { Download } from "lucide-react";
 import certGst from "@/assets/cert-gst.jpg";
 import certIec from "@/assets/cert-iec.jpg";
+import certUdyam from "@/assets/cert-udyam.jpg";
 
 const certificates = [
   {
@@ -16,6 +17,12 @@ const certificates = [
     desc: "DGFT Importer-Exporter Code (IEC: FMFPR2633G) issued by Ministry of Commerce & Industry",
     image: certIec,
     pdf: "/certificates/IEC-Certificate.pdf",
+  },
+  {
+    name: "Udyam Registration",
+    desc: "MSME Udyam Registration Certificate (UDYAM-MH-17-0214343) — Micro Enterprise, Manufacturing",
+    image: certUdyam,
+    pdf: "/certificates/Udyam-Registration.pdf",
   },
 ];
 
@@ -43,7 +50,7 @@ const CertificatesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {certificates.map((c, i) => (
             <motion.div
               key={c.name}
