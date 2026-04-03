@@ -115,6 +115,10 @@ serve(async (req) => {
                   <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #d4a843;">${email}</a></td>
                 </tr>
                 <tr>
+                  <td style="padding: 8px 0; color: #888; vertical-align: top;">Phone:</td>
+                  <td style="padding: 8px 0; color: #333;">${phone || "Not provided"}</td>
+                </tr>
+                <tr>
                   <td style="padding: 8px 0; color: #888; vertical-align: top;">Product:</td>
                   <td style="padding: 8px 0; color: #333; font-weight: bold;">${product}</td>
                 </tr>
