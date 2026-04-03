@@ -129,6 +129,15 @@ const ContactSection = () => {
               </div>
             </div>
             <div>
+              <label className="text-sm font-medium text-foreground mb-1.5 block">Phone Number</label>
+              <input
+                name="phone"
+                type="tel"
+                className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ember/50"
+                placeholder="+91 XXXXX XXXXX"
+              />
+            </div>
+            <div>
               <label className="text-sm font-medium text-foreground mb-1.5 block">Product Interest</label>
               <select
                 name="product"
