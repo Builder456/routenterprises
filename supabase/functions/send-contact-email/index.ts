@@ -50,7 +50,7 @@ serve(async (req) => {
       method: "POST",
       headers,
       body: JSON.stringify({
-        from: "Rout Enterprises <onboarding@resend.dev>",
+        from: "Rout Enterprises <noreply@routenterprises.com>",
         to: [email],
         subject: "Thank you for your inquiry – Rout Enterprises",
         html: `
