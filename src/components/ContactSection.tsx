@@ -17,6 +17,7 @@ const ContactSection = () => {
 
     const name = (formData.get("name") as string)?.trim();
     const email = (formData.get("email") as string)?.trim();
+    const phone = (formData.get("phone") as string)?.trim();
     const product = (formData.get("product") as string)?.trim();
     const message = (formData.get("message") as string)?.trim();
 
