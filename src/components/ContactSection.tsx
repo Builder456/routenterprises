@@ -26,7 +26,7 @@ const ContactSection = () => {
     setLoading(true);
     try {
       const { data, error } = await supabase.functions.invoke("send-contact-email", {
-        body: { name, email, product, message },
+        body: { name, email, phone, product, message },
       });
 
       if (error) throw error;
