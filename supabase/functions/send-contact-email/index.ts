@@ -38,7 +38,7 @@ serve(async (req) => {
       );
     }
 
-    const { name, email, product, message } = parsed.data;
+    const { name, email, phone, product, message } = parsed.data;
 
     const headers = {
       "Content-Type": "application/json",
