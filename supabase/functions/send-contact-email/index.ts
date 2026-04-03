@@ -12,6 +12,7 @@ const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 const ContactSchema = z.object({
   name: z.string().trim().min(1).max(100),
   email: z.string().trim().email().max(255),
+  phone: z.string().trim().max(20).optional().default(""),
   product: z.string().trim().min(1).max(200),
   message: z.string().trim().min(1).max(5000),
 });
@@ -37,7 +38,7 @@ serve(async (req) => {
       );
     }
 
-    const { name, email, product, message } = parsed.data;
+    const { name, email, phone, product, message } = parsed.data;
 
     const headers = {
       "Content-Type": "application/json",
@@ -112,6 +113,10 @@ serve(async (req) => {
                 <tr>
                   <td style="padding: 8px 0; color: #888; vertical-align: top;">Email:</td>
                   <td style="padding: 8px 0;"><a href="mailto:${email}" style="color: #d4a843;">${email}</a></td>
+                </tr>
+                <tr>
+                  <td style="padding: 8px 0; color: #888; vertical-align: top;">Phone:</td>
+                  <td style="padding: 8px 0; color: #333;">${phone || "Not provided"}</td>
                 </tr>
                 <tr>
                   <td style="padding: 8px 0; color: #888; vertical-align: top;">Product:</td>
