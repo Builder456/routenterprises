@@ -12,6 +12,7 @@ const GATEWAY_URL = "https://connector-gateway.lovable.dev/resend";
 const ContactSchema = z.object({
   name: z.string().trim().min(1).max(100),
   email: z.string().trim().email().max(255),
+  phone: z.string().trim().max(20).optional().default(""),
   product: z.string().trim().min(1).max(200),
   message: z.string().trim().min(1).max(5000),
 });
