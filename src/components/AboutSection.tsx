@@ -28,7 +28,7 @@ const AboutSection = () => {
             Trusted Stainless Steel Flanges & Fasteners Manufacturer in India
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Rout Enterprises is a leading exporter of premium stainless steel products. With over 2+ years of experience, we deliver world-class flanges, fasteners, wires, profiles, and bright bars to industries across the globe. Our commitment to quality, reliability, and customer satisfaction sets us apart.
+            Rout Enterprises is an emerging exporter of premium stainless steel products. With over 2+ years of experience, we deliver world-class flanges, fasteners, wires, profiles, and bright bars to industries across the globe. Our commitment to quality, reliability, and customer satisfaction sets us apart.
           </p>
         </motion.div>
 
