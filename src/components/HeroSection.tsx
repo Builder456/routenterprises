@@ -32,8 +32,9 @@ const HeroSection = () => (
           transition={{ delay: 0.4 }}
           className="font-display text-4xl md:text-6xl lg:text-7xl font-extrabold text-primary-foreground leading-[1.1] mb-6"
         >
-          Engineering Excellence in{" "}
-          <span className="text-gradient-accent">Stainless Steel</span>
+          India's Leading{" "}
+          <span className="text-gradient-accent">Stainless Steel</span>{" "}
+          Flanges & Fasteners Exporter
         </motion.h1>
 
         <motion.p
