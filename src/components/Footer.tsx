@@ -7,7 +7,7 @@ const Footer = () => (
             ROUT <span className="text-ember-glow">ENTERPRISES</span>
           </h3>
           <p className="text-sm text-primary-foreground/50 leading-relaxed">
-            Emerging stainless steel flanges manufacturer & exporter from India. Supplier of SS fasteners, bright bars, wires, profiles & seamless pipes to 8+ countries.
+            Emerging stainless steel flanges supplier & exporter from India. Supplier of SS fasteners, bright bars, wires, profiles & seamless pipes to 8+ countries.
           </p>
         </div>
         <div>
