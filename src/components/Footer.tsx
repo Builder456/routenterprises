@@ -11,12 +11,6 @@ const Footer = () => (
           </p>
         </div>
         <div>
-          <h4 className="font-display font-semibold text-primary-foreground mb-3">Popular Searches</h4>
-          <p className="text-xs text-primary-foreground/40 leading-relaxed">
-            SS 304 flanges price India • stainless steel bolt manufacturer • bright bar supplier Mumbai • SS wire rod exporter • duplex steel flanges • ASTM A182 flanges • DIN flanges India • stainless steel pipe fittings • hex bolt supplier India • 316L SS exporter • weld neck flanges manufacturer • stainless steel round bar • cold drawn bars India • welding wire supplier
-          </p>
-        </div>
-        <div>
           <h4 className="font-display font-semibold text-primary-foreground mb-3">Products</h4>
           <ul className="space-y-2 text-sm text-primary-foreground/50">
             <li>SS Flanges</li>
