@@ -7,13 +7,7 @@ const Footer = () => (
             ROUT <span className="text-ember-glow">ENTERPRISES</span>
           </h3>
           <p className="text-sm text-primary-foreground/50 leading-relaxed">
-            Leading stainless steel flanges manufacturer & exporter from India. Supplier of SS fasteners, bright bars, wires, profiles & seamless pipes to 8+ countries.
-          </p>
-        </div>
-        <div>
-          <h4 className="font-display font-semibold text-primary-foreground mb-3">Popular Searches</h4>
-          <p className="text-xs text-primary-foreground/40 leading-relaxed">
-            SS 304 flanges price India • stainless steel bolt manufacturer • bright bar supplier Mumbai • SS wire rod exporter • duplex steel flanges • ASTM A182 flanges • DIN flanges India • stainless steel pipe fittings • hex bolt supplier India • 316L SS exporter • weld neck flanges manufacturer • stainless steel round bar • cold drawn bars India • welding wire supplier
+            Emerging stainless steel flanges manufacturer & exporter from India. Supplier of SS fasteners, bright bars, wires, profiles & seamless pipes to 8+ countries.
           </p>
         </div>
         <div>
