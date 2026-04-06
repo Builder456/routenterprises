@@ -72,36 +72,81 @@ const products = [
   },
 ];
 
+const cardVariants = {
+  hidden: (i: number) => ({
+    opacity: 0,
+    y: 60,
+    rotateX: 8,
+    scale: 0.95,
+  }),
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    rotateX: 0,
+    scale: 1,
+    transition: {
+      delay: 0.08 * i,
+      duration: 0.7,
+      ease: [0.25, 0.46, 0.45, 0.94],
+    },
+  }),
+};
+
 const ProductsSection = () => {
   const ref = useRef(null);
-  const inView = useInView(ref, { once: true, margin: "-100px" });
+  const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
     <section id="products" ref={ref} className="py-24 bg-background">
       <div className="container mx-auto px-4">
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <p className="text-ember font-display font-semibold text-sm uppercase tracking-[0.2em] mb-3">Our Products</p>
-          <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
+          <motion.p
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={inView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.5 }}
+            className="text-ember font-display font-semibold text-sm uppercase tracking-[0.2em] mb-3"
+          >
+            Our Products
+          </motion.p>
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={inView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4"
+          >
             Premium Stainless Steel Range
-          </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          </motion.h2>
+          <motion.div
+            initial={{ scaleX: 0 }}
+            animate={inView ? { scaleX: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="h-1 w-20 bg-ember mx-auto rounded-full mb-4"
+          />
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : {}}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-muted-foreground text-lg max-w-2xl mx-auto"
+          >
             Manufactured to international standards and exported to industries across the globe.
-          </p>
+          </motion.p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ perspective: "1000px" }}>
           {products.map((p, i) => (
             <motion.div
               key={p.name}
-              initial={{ opacity: 0, y: 40 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.1 * i, duration: 0.5 }}
-              className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300"
+              custom={i}
+              initial="hidden"
+              animate={inView ? "visible" : "hidden"}
+              variants={cardVariants}
+              whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.3 } }}
+              className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-300"
             >
               <div className="relative h-56 overflow-hidden">
                 <img
@@ -110,7 +155,7 @@ const ProductsSection = () => {
                   loading="lazy"
                   width={1024}
                   height={768}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
                 <h3 className="absolute bottom-4 left-4 right-4 font-display font-bold text-lg text-primary-foreground">
