@@ -3,7 +3,7 @@ import { ArrowRight, Globe, Shield, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const stats = [
-  { icon: Globe, value: "8+", label: "Countries Served" },
+  { icon: Globe, value: "4+", label: "Countries Served" },
   { icon: Shield, value: "2+", label: "Years Experience" },
   { icon: Award, value: "ISO", label: "Certified Quality" },
 ];
