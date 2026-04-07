@@ -1,3 +1,5 @@
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -36,29 +38,48 @@ const faqs = [
   },
 ];
 
-const FaqSection = () => (
-  <section id="faq" className="py-20 bg-background">
-    <div className="container mx-auto px-4 max-w-3xl">
-      <h2 className="font-display text-3xl md:text-4xl font-bold text-center text-foreground mb-4">
-        Frequently Asked <span className="text-ember-glow">Questions</span>
-      </h2>
-      <p className="text-center text-muted-foreground mb-10">
-        Find answers to common questions about our products and services.
-      </p>
-      <Accordion type="single" collapsible className="w-full">
-        {faqs.map((faq, i) => (
-          <AccordionItem key={i} value={`faq-${i}`} className="border-border">
-            <AccordionTrigger className="text-left text-foreground hover:text-ember-glow hover:no-underline">
-              {faq.q}
-            </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground leading-relaxed">
-              {faq.a}
-            </AccordionContent>
-          </AccordionItem>
-        ))}
-      </Accordion>
-    </div>
-  </section>
-);
+const FaqSection = () => {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true, margin: "-80px" });
+
+  return (
+    <section id="faq" ref={ref} className="py-20 bg-background">
+      <div className="container mx-auto px-4 max-w-3xl">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-10"
+        >
+          <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Frequently Asked <span className="text-ember-glow">Questions</span>
+          </h2>
+          <p className="text-muted-foreground">
+            Find answers to common questions about our products and services.
+          </p>
+        </motion.div>
+        <Accordion type="single" collapsible className="w-full">
+          {faqs.map((faq, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, x: -30 }}
+              animate={inView ? { opacity: 1, x: 0 } : {}}
+              transition={{ delay: 0.08 * i, duration: 0.5 }}
+            >
+              <AccordionItem value={`faq-${i}`} className="border-border">
+                <AccordionTrigger className="text-left text-foreground hover:text-ember-glow hover:no-underline">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent className="text-muted-foreground leading-relaxed">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            </motion.div>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  );
+};
 
 export default FaqSection;

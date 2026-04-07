@@ -51,9 +51,10 @@ const TestimonialsSection = () => {
           {testimonials.map((t, i) => (
             <motion.div
               key={t.name}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.15 * i, duration: 0.5 }}
+              initial={{ opacity: 0, y: 40, scale: 0.95 }}
+              animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
+              transition={{ delay: 0.15 * i, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+              whileHover={{ y: -6, transition: { duration: 0.3 } }}
               className="bg-card rounded-lg p-8 shadow-card hover:shadow-card-hover transition-all relative"
             >
               <Quote className="w-10 h-10 text-ember/15 absolute top-6 right-6" />

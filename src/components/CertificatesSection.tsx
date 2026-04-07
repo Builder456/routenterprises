@@ -54,9 +54,10 @@ const CertificatesSection = () => {
           {certificates.map((c, i) => (
             <motion.div
               key={c.name}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.15 * i, duration: 0.5 }}
+              initial={{ opacity: 0, y: 40, rotateY: 10 }}
+              animate={inView ? { opacity: 1, y: 0, rotateY: 0 } : {}}
+              transition={{ delay: 0.15 * i, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+              whileHover={{ y: -6, scale: 1.02, transition: { duration: 0.3 } }}
               className="bg-primary-foreground/5 backdrop-blur-sm border border-primary-foreground/10 rounded-lg overflow-hidden hover:bg-primary-foreground/10 transition-colors"
             >
               <div className="relative aspect-[3/4] overflow-hidden bg-white">
