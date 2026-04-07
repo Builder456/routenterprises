@@ -36,9 +36,10 @@ const AboutSection = () => {
           {highlights.map((h, i) => (
             <motion.div
               key={h.title}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ delay: 0.2 + i * 0.1, duration: 0.5 }}
+              initial={{ opacity: 0, y: 40, scale: 0.95 }}
+              animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
+              transition={{ delay: 0.2 + i * 0.12, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
+              whileHover={{ y: -6, transition: { duration: 0.3 } }}
               className="bg-card rounded-lg p-6 shadow-card hover:shadow-card-hover transition-shadow"
             >
               <div className="w-12 h-12 rounded-md bg-primary/10 flex items-center justify-center mb-4">
