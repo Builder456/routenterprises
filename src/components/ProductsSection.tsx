@@ -97,7 +97,7 @@ const ProductsSection = () => {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="products" ref={ref} className="py-24 bg-background">
+    <section id="products" ref={ref} className="py-24 bg-primary">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -117,7 +117,7 @@ const ProductsSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4"
+            className="font-display text-3xl md:text-5xl font-bold text-primary-foreground mb-4"
           >
             Premium Stainless Steel Range
           </motion.h2>
@@ -131,7 +131,7 @@ const ProductsSection = () => {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-muted-foreground text-lg max-w-2xl mx-auto"
+            className="text-primary-foreground/70 text-lg max-w-2xl mx-auto"
           >
             Manufactured to international standards and exported to industries across the globe.
           </motion.p>
