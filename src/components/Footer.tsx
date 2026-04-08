@@ -57,7 +57,7 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-primary-foreground mb-3">Our Location</h4>
             <div className="rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Rout+Enterprises+-+Export+and+Import,Saravali,Boisar,Maharashtra&zoom=17"
+                src="https://maps.app.goo.gl/f7YRQ3u39JfjuwpG9?g_st=ac"
                 width="100%"
                 height="180"
                 style={{ border: 0 }}
