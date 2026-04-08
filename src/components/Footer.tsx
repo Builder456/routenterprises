@@ -57,7 +57,7 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-primary-foreground mb-3">Our Location</h4>
             <div className="rounded-lg overflow-hidden">
               <iframe
-                src="https://maps.app.goo.gl/f7YRQ3u39JfjuwpG9?g_st=ac"
+                src="https://www.google.com/maps/place/Rout+Enterprises+-+Stainless+Steel+Flanges,+Bright+bars,+Profiles+Exporter,+Saipooja+Apt,+A%2F102,+Trivedi+Nagar,+Saravali,+Boisar,+Maharashtra+401501/@19.775488,72.7875584,13z/data=!4m2!3m1!1s0x3be71f725186b905:0x9162209c4d631e9a?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI2MDQwMV8wIJvbDyoASAJQAQ%3D%3D"
                 width="100%"
                 height="180"
                 style={{ border: 0 }}
