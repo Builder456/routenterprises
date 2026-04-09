@@ -57,7 +57,7 @@ const Footer = () => {
             <h4 className="font-display font-semibold text-primary-foreground mb-3">Our Location</h4>
             <div className="rounded-lg overflow-hidden">
               <iframe
-                src="https://www.google.com/maps/place/Rout+Enterprises+-+Stainless+Steel+Flanges,+Bright+bars,+Profiles+Exporter,+Saipooja+Apt,+A%2F102,+Trivedi+Nagar,+Saravali,+Boisar,+Maharashtra+401501/@19.775488,72.7875584,13z/data=!4m2!3m1!1s0x3be71f725186b905:0x9162209c4d631e9a?utm_campaign=ml-ardl&g_ep=Eg1tbF8yMDI2MDQwMV8wIJvbDyoASAJQAQ%3D%3D"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3754.4631768162003!2d72.75355487468227!3d19.7779497295624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be71f725186b905%3A0x9162209c4d631e9a!2sRout%20Enterprises%20-%20Stainless%20Steel%20Flanges%2C%20Bright%20bars%2C%20Profiles%20Exporter!5e0!3m2!1sen!2sin!4v1775716868147!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
                 width="100%"
                 height="180"
                 style={{ border: 0 }}
