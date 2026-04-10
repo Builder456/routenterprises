@@ -19,4 +19,4 @@ User-agent: *
 Allow: /
 Crawl-delay: 2
 
-Sitemap: https://routenterprises.lovable.app/sitemap.xml
+Sitemap: https://routenterprises.com/sitemap.xml
