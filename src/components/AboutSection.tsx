@@ -5,7 +5,7 @@ import { Factory, Truck, Users, CheckCircle } from "lucide-react";
 
 const highlights = [
   { icon: Factory, title: "State-of-Art Manufacturing", desc: "Equipped with modern machinery and quality control systems." },
-  { icon: Truck, title: "Global Logistics", desc: "Seamless export operations to 4+ countries worldwide." },
+  { icon: Truck, title: "Global Logistics", desc: "Seamless export operations to 8+ countries worldwide." },
   { icon: Users, title: "Expert Team", desc: "Dedicated professionals with decades of industry experience." },
   { icon: CheckCircle, title: "Quality Assured", desc: "Every product passes rigorous testing and certification." },
 ];
