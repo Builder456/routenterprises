@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/rout-enterprises-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -21,20 +20,6 @@ const Navbar = () => {
         {/* Brand text (left) */}
         <a href="#home" aria-label="Rout Enterprises - Home" className="font-display text-lg font-bold text-primary-foreground tracking-tight">
           ROUT <span className="text-ember-glow">ENTERPRISES</span>
-        </a>
-
-        {/* Logo centered */}
-        <a
-          href="#home"
-          aria-label="Rout Enterprises - Home"
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-        >
-          <img
-            src={logo}
-            alt="Rout Enterprises logo"
-            className="h-12 w-auto bg-primary-foreground rounded-md p-1 shadow-sm"
-            loading="eager"
-          />
         </a>
 
         {/* Desktop nav (right) */}
