@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     q: "How can I request a quote from Rout Enterprises?",
-    a: "You can request a quote by filling out the contact form on our website, calling us at +91 84460 55949, or emailing us at globalexport@routenterprises.com or sales@routenterprises.com. Our team responds within 24 hours.",
+    a: "You can request a quote by filling out the contact form on our website, calling us at +91 84460 55949, or emailing us at sales@routenterprises.com. Our team responds within 24 hours.",
   },
   {
     q: "What testing facilities does Rout Enterprises use?",
