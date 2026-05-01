@@ -17,21 +17,28 @@ const Navbar = () => {
 
   return (
     <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-primary-foreground/10">
-      <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <a href="#home" aria-label="Rout Enterprises - Home" className="flex items-center gap-2">
+      <div className="container mx-auto relative flex items-center justify-between h-16 px-4">
+        {/* Brand text (left) */}
+        <a href="#home" aria-label="Rout Enterprises - Home" className="font-display text-lg font-bold text-primary-foreground tracking-tight">
+          ROUT <span className="text-ember-glow">ENTERPRISES</span>
+        </a>
+
+        {/* Logo centered */}
+        <a
+          href="#home"
+          aria-label="Rout Enterprises - Home"
+          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
           <img
             src={logo}
             alt="Rout Enterprises logo"
-            className="h-10 w-auto bg-primary-foreground rounded-md p-1 shadow-sm"
+            className="h-12 w-auto bg-primary-foreground rounded-md p-1 shadow-sm"
             loading="eager"
           />
-          <span className="hidden sm:inline font-display text-lg font-bold text-primary-foreground tracking-tight">
-            ROUT <span className="text-ember-glow">ENTERPRISES</span>
-          </span>
         </a>
 
-        {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop nav (right) */}
+        <div className="hidden md:flex items-center gap-6">
           {navLinks.map((l) => (
             <a
               key={l.href}
