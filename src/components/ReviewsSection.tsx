@@ -68,7 +68,13 @@ const ReviewsSection = () => {
 
     setLoading(true);
     try {
-      const { error } = await supabase.from("reviews").insert(parsed.data);
+      const { error } = await supabase.from("reviews").insert({
+        name: parsed.data.name,
+        company: parsed.data.company ?? null,
+        country: parsed.data.country ?? null,
+        rating: parsed.data.rating,
+        review: parsed.data.review,
+      });
       if (error) throw error;
       toast({
         title: "Thank you!",
