@@ -97,7 +97,7 @@ serve(async (req) => {
       headers,
       body: JSON.stringify({
         from: "Rout Enterprises Website <noreply@routenterprises.com>",
-        to: ["akashrout1211@gmail.com"],
+        to: ["akashrout1211@gmail.com", "globalexport@routenterprises.com", "sales@routenterprises.com"],
         subject: `New Inquiry: ${product} – from ${name}`,
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
