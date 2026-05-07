@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -33,6 +34,7 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
+          <LanguageSwitcher />
           <a
             href="tel:+918446055949"
             className="flex items-center gap-2 bg-ember px-4 py-2 rounded-md text-sm font-semibold text-primary-foreground transition-transform hover:scale-105"
@@ -66,6 +68,9 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
+              <div className="pt-2 border-t border-primary-foreground/10">
+                <LanguageSwitcher />
+              </div>
             </div>
           </motion.div>
         )}
