@@ -1,12 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /api/
-
-# Allow major search engines explicitly
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
 
 Sitemap: https://routenterprises.lovable.app/sitemap.xml
