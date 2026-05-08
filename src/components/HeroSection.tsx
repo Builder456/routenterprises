@@ -38,16 +38,16 @@ const HeroSection = () => {
       {/* Slideshow background */}
       <div className="absolute inset-0">
         {slides.map((slide, i) => (
-          <img
-            key={i}
-            src={slide.src}
-            alt={slide.label}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              i === current ? "opacity-100" : "opacity-0"
-            }`}
-            width={1920}
-            height={1080}
-          />
+  <img
+    key={i}
+    src={slide.src}
+    alt={`${slide.label} - Premium Stainless Steel Products Manufactured & Exported by Rout Enterprises India`}
+    className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+      i === current ? "opacity-100" : "opacity-0"
+    }`}
+    width={1920}
+    height={1080}
+  />
         ))}
         <div className="absolute inset-0 bg-gradient-hero" />
       </div>
