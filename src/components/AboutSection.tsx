@@ -25,10 +25,10 @@ const AboutSection = () => {
         >
           <p className="text-ember font-display font-semibold text-sm uppercase tracking-[0.2em] mb-3">About Us</p>
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Trusted Stainless Steel Flanges & Fasteners Supplier in India
+            Trusted Stainless Steel Flanges, Fasteners & Bright Bars Exporter from India
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Rout Enterprises is an emerging exporter of premium stainless steel products. With over 2+ years of experience, we deliver world-class flanges, fasteners, wires, profiles, and bright bars to industries across the globe. Our commitment to quality, reliability, and customer satisfaction sets us apart.
+            Rout Enterprises is a leading stainless steel flanges exporter, fasteners manufacturer, bright bars supplier, and seamless pipes distributor based in Boisar, Maharashtra, India. With over 2+ years of experience in the steel industry, we specialize in manufacturing and exporting premium ASTM A182 stainless steel flanges, ANSI B16.5 pipe flanges, DIN standard fasteners, SS 304/316 bolts and nuts, wire rods, stainless steel profiles, and precision bright bars to industries across the USA, UK, Germany, UAE, Saudi Arabia, Singapore, and Australia. Our commitment to ISO-certified quality, competitive pricing, and on-time global delivery has made us a preferred partner for oil & gas, petrochemical, construction, and marine sectors worldwide.
           </p>
         </motion.div>
 
