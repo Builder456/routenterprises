@@ -151,7 +151,7 @@ const ProductsSection = () => {
               <div className="relative h-56 overflow-hidden">
                 <img
                   src={p.image}
-                  alt={p.name}
+                  alt={`${p.name} - Premium Quality Stainless Steel Products Exported Worldwide by Rout Enterprises India`}
                   loading="lazy"
                   width={1024}
                   height={768}
