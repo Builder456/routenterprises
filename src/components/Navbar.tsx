@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import LanguageSwitcher from "./LanguageSwitcher";
+import routLogo from "@/assets/rout-logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
