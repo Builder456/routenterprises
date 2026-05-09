@@ -20,8 +20,8 @@ const Navbar = () => {
     <nav aria-label="Main navigation" className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-md border-b border-primary-foreground/10">
       <div className="container mx-auto relative flex items-center justify-between h-16 px-4">
         {/* Brand text (left) */}
-        <a href="#home" aria-label="Rout Enterprises - Home" className="font-display text-lg font-bold text-primary-foreground tracking-tight">
-          ROUT <span className="text-ember-glow">ENTERPRISES</span>
+        <a href="#home" aria-label="Rout Enterprises - Home" className="flex items-center">
+          <img src={routLogo} alt="Rout Enterprises logo" className="h-10 w-auto md:h-12 bg-primary-foreground rounded px-1 py-0.5" />
         </a>
 
         {/* Desktop nav (right) */}
