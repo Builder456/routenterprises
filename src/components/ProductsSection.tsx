@@ -68,7 +68,7 @@ const products = [
     grades: "304, 304L, 316, 316L, 321, 310S, 317L, Duplex 2205",
     applications: "Oil & Gas, Chemical & Petrochemical, Power Generation, Pharmaceutical, Heat Exchangers, Boilers & Condensers",
     testing: "Hydrostatic Test, Eddy Current Test, Ultrasonic Test, Flattening Test, Flaring Test",
-    catalogue: null,
+    catalogue: "/catalogues/Seamless_Pipes_Tubes.pdf",
   },
 ];
 
