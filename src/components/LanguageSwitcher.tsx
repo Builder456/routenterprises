@@ -35,17 +35,76 @@ const LanguageSwitcher = () => {
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
-    // Auto-detect on first visit
-    const stored = localStorage.getItem("preferredLang");
-    if (!stored) {
-      const browserLang = localeToLang(navigator.language || "en");
-      if (browserLang && browserLang !== "en") {
-        setCookie(browserLang);
-        localStorage.setItem("preferredLang", browserLang);
-      } else {
-        localStorage.setItem("preferredLang", "en");
+    // Country -> Google Translate language code
+    const countryToLang: Record<string, string> = {
+      US: "en", GB: "en", AU: "en", CA: "en", IN: "en", IE: "en", NZ: "en", ZA: "en",
+      SA: "ar", AE: "ar", EG: "ar", QA: "ar", KW: "ar", BH: "ar", OM: "ar", JO: "ar", IQ: "ar", LB: "ar", SY: "ar", YE: "ar", LY: "ar", DZ: "ar", MA: "ar", TN: "ar",
+      DE: "de", AT: "de", CH: "de",
+      FR: "fr", BE: "fr", LU: "fr", SN: "fr", CI: "fr",
+      ES: "es", MX: "es", AR: "es", CO: "es", CL: "es", PE: "es", VE: "es", EC: "es", GT: "es", CU: "es", BO: "es", DO: "es", HN: "es", PY: "es", SV: "es", NI: "es", CR: "es", PA: "es", UY: "es",
+      IT: "it", VA: "it", SM: "it",
+      PT: "pt", BR: "pt", AO: "pt", MZ: "pt",
+      NL: "nl",
+      RU: "ru", BY: "ru", KZ: "ru", KG: "ru",
+      CN: "zh-CN", SG: "zh-CN",
+      TW: "zh-TW", HK: "zh-TW", MO: "zh-TW",
+      JP: "ja",
+      KR: "ko",
+      TH: "th",
+      VN: "vi",
+      ID: "id",
+      MY: "ms",
+      PH: "tl",
+      TR: "tr",
+      PL: "pl",
+      UA: "uk",
+      EL: "el", GR: "el",
+      SE: "sv",
+      NO: "no",
+      DK: "da",
+      FI: "fi",
+      CZ: "cs",
+      RO: "ro",
+      HU: "hu",
+      BG: "bg",
+      IL: "iw",
+      IR: "fa", AF: "fa",
+      PK: "ur",
+      BD: "bn",
+      LK: "si",
+      NP: "ne",
+      MM: "my",
+      KH: "km",
+    };
+
+    const detectAndSet = async () => {
+      const stored = localStorage.getItem("preferredLang");
+      if (stored) return;
+
+      let lang = "en";
+      try {
+        // Free geolocation API (no API key required)
+        const res = await fetch("https://ipapi.co/json/", { cache: "no-store" });
+        if (res.ok) {
+          const data = await res.json();
+          const country = (data.country_code || data.country || "").toUpperCase();
+          if (country && countryToLang[country]) {
+            lang = countryToLang[country];
+          }
+        }
+      } catch {
+        // Fallback to browser language
+        lang = localeToLang(navigator.language || "en");
       }
-    }
+
+      localStorage.setItem("preferredLang", lang);
+      if (lang && lang !== "en") {
+        setCookie(lang);
+        // Reload so Google Translate picks up the new cookie
+        window.location.reload();
+      }
+    };
+    detectAndSet();
 
     // Inject Google Translate
     if (!document.getElementById("google-translate-script")) {
