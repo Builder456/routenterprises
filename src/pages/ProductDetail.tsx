@@ -16,7 +16,7 @@ const ProductDetail = () => {
     if (product) {
       document.title = `${product.name} | Rout Enterprises`;
       const desc = document.querySelector('meta[name="description"]');
-      if (desc) desc.setAttribute("content", product.desc.slice(0, 160));
+      if (desc) desc.setAttribute("content", product.brief.slice(0, 160));
     }
   }, [product]);
 
@@ -37,9 +37,7 @@ const ProductDetail = () => {
     );
   }
 
-  const sections = [
-    { title: "Available Grades", body: product.grades },
-    { title: "Applications", body: product.applications },
+  const textSections = [
     { title: "Testing Facilities", body: product.testing },
     { title: "Certifications", body: product.certifications },
   ].filter((s) => s.body);
@@ -84,7 +82,10 @@ const ProductDetail = () => {
                 {product.name}
               </h1>
               <div className="h-1 w-20 bg-ember rounded-full mb-6" />
-              <p className="text-lg text-muted-foreground mb-6 leading-relaxed">{product.desc}</p>
+              <p className="text-lg text-foreground/90 mb-4 leading-relaxed font-medium">
+                {product.brief}
+              </p>
+              <p className="text-base text-muted-foreground mb-6 leading-relaxed">{product.desc}</p>
 
               <div className="flex flex-wrap gap-2 mb-8">
                 {product.specs.map((s) => (
@@ -118,24 +119,90 @@ const ProductDetail = () => {
             </motion.div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mt-16">
-            {sections.map((s, i) => (
-              <motion.div
-                key={s.title}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.05 }}
-                className="bg-card border border-border rounded-lg p-6 shadow-card"
-              >
-                <div className="flex items-center gap-2 mb-3">
-                  <CheckCircle2 className="w-5 h-5 text-ember" />
-                  <h2 className="font-display font-bold text-lg text-foreground">{s.title}</h2>
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
-              </motion.div>
-            ))}
-          </div>
+          {/* Available Grades */}
+          <motion.section
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mt-16"
+          >
+            <div className="flex items-center gap-2 mb-5">
+              <CheckCircle2 className="w-5 h-5 text-ember" />
+              <h2 className="font-display font-bold text-2xl text-foreground">Available Grades</h2>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {product.grades.map((g) => (
+                <span
+                  key={g}
+                  className="px-4 py-2 rounded-md bg-card border border-border text-sm font-semibold text-foreground hover:border-ember hover:text-ember transition-colors"
+                >
+                  {g}
+                </span>
+              ))}
+            </div>
+          </motion.section>
+
+          {/* Where It's Used */}
+          <section className="mt-16">
+            <div className="flex items-center gap-2 mb-2">
+              <CheckCircle2 className="w-5 h-5 text-ember" />
+              <h2 className="font-display font-bold text-2xl text-foreground">Where It's Used</h2>
+            </div>
+            <p className="text-muted-foreground mb-6">
+              Key industries and applications served by our {product.name.toLowerCase()}.
+            </p>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {product.applications.map((app, i) => (
+                <motion.div
+                  key={app.label + i}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: i * 0.05 }}
+                  className="group relative rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all"
+                >
+                  <div className="aspect-[4/3] overflow-hidden bg-muted">
+                    <img
+                      src={app.image}
+                      alt={`${app.label} application of ${product.name}`}
+                      loading="lazy"
+                      width={768}
+                      height={512}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
+                  <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
+                    <h3 className="font-display font-bold text-sm md:text-base text-white">
+                      {app.label}
+                    </h3>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </section>
+
+          {textSections.length > 0 && (
+            <div className="grid md:grid-cols-2 gap-6 mt-16">
+              {textSections.map((s, i) => (
+                <motion.div
+                  key={s.title}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.05 }}
+                  className="bg-card border border-border rounded-lg p-6 shadow-card"
+                >
+                  <div className="flex items-center gap-2 mb-3">
+                    <CheckCircle2 className="w-5 h-5 text-ember" />
+                    <h2 className="font-display font-bold text-lg text-foreground">{s.title}</h2>
+                  </div>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{s.body}</p>
+                </motion.div>
+              ))}
+            </div>
+          )}
 
           <section className="mt-20">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
