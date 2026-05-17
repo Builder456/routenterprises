@@ -56,7 +56,7 @@ const GallerySection = () => {
             From Our Factory Floor
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            A glimpse into our manufacturing facility and the quality products we deliver worldwide.
+            A glimpse into our warehousing and dispatch facility and the quality products we deliver worldwide.
           </p>
         </motion.div>
 

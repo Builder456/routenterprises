@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Factory, Truck, Users, CheckCircle } from "lucide-react";
 
 const highlights = [
-  { icon: Factory, title: "State-of-Art Manufacturing", desc: "Equipped with modern machinery and quality control systems." },
+  { icon: Factory, title: "State-of-Art Sourcing", desc: "Equipped with modern machinery and quality control systems." },
   { icon: Truck, title: "Global Logistics", desc: "Seamless export operations to 4+ countries worldwide." },
   { icon: Users, title: "Expert Team", desc: "Dedicated professionals with decades of industry experience." },
   { icon: CheckCircle, title: "Quality Assured", desc: "Every product passes rigorous testing and certification." },
@@ -28,7 +28,7 @@ const AboutSection = () => {
             Trusted Stainless Steel Flanges, Fasteners & Bright Bars Exporter from India
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Rout Enterprises is a leading stainless steel flanges exporter, fasteners manufacturer, bright bars supplier, and seamless pipes distributor based in Boisar, Maharashtra, India. With over 2+ years of experience in the steel industry, we specialize in manufacturing and exporting premium ASTM A182 stainless steel flanges, ANSI B16.5 pipe flanges, DIN standard fasteners, SS 304/316 bolts and nuts, wire rods, stainless steel profiles, and precision bright bars to industries across the USA, UK, Germany, UAE, Saudi Arabia, Singapore, and Australia. Our commitment to ISO-certified quality, competitive pricing, and on-time global delivery has made us a preferred partner for oil & gas, petrochemical, construction, and marine sectors worldwide.
+            Rout Enterprises is a leading stainless steel flanges exporter, fasteners supplier, bright bars supplier, and seamless pipes distributor based in Boisar, Maharashtra, India. With over 2+ years of experience in the steel industry, we specialize in supplying and exporting premium ASTM A182 stainless steel flanges, ANSI B16.5 pipe flanges, DIN standard fasteners, SS 304/316 bolts and nuts, wire rods, stainless steel profiles, and precision bright bars to industries across the USA, UK, Germany, UAE, Saudi Arabia, Singapore, and Australia. Our commitment to ISO-certified quality, competitive pricing, and on-time global delivery has made us a preferred partner for oil & gas, petrochemical, construction, and marine sectors worldwide.
           </p>
         </motion.div>
 

@@ -20,7 +20,7 @@ const certificates = [
   },
   {
     name: "Udyam Registration",
-    desc: "MSME Udyam Registration Certificate (UDYAM-MH-17-0214343) — Micro Enterprise, Manufacturing",
+    desc: "MSME Udyam Registration Certificate (UDYAM-MH-17-0214343) — Micro Enterprise, Trading & Export",
     image: certUdyam,
     pdf: "/certificates/Udyam-Registration.pdf",
   },

@@ -9,7 +9,7 @@ import slideWireRods from "@/assets/slideshow-wire-rods.jpg";
 import slideProfiles from "@/assets/slideshow-profiles.jpg";
 
 const slides = [
-  { src: heroBg, label: "Steel Manufacturing" },
+  { src: heroBg, label: "Steel Export Operations" },
   { src: slideFlanges, label: "Stainless Steel Flanges" },
   { src: slideFasteners, label: "SS Fasteners & Bolts" },
   { src: slideBrightBars, label: "Bright Bars & Hex Bars" },
@@ -41,7 +41,7 @@ const HeroSection = () => {
   <img
     key={i}
     src={slide.src}
-    alt={`${slide.label} - Premium Stainless Steel Products Manufactured & Exported by Rout Enterprises India`}
+    alt={`${slide.label} - Premium Stainless Steel Products Supplied & Exported by Rout Enterprises India`}
     className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
       i === current ? "opacity-100" : "opacity-0"
     }`}

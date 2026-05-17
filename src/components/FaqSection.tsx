@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     q: "What grades of stainless steel does Rout Enterprises offer?",
-    a: "We offer all major grades including 304, 316, 321, and duplex stainless steel. Our products are manufactured to international standards like ASTM A182, ANSI B16.5, DIN, and ISO specifications.",
+    a: "We offer all major grades including 304, 316, 321, and duplex stainless steel. Our products are supplied per international standards like ASTM A182, ANSI B16.5, DIN, and ISO specifications.",
   },
   {
     q: "Is Rout Enterprises ISO certified?",
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Do you provide custom sizes and specifications?",
-    a: "Yes, we offer custom manufacturing for all our product lines including flanges, fasteners, wires, profiles, bright bars, and pipes. Contact our sales team with your specific requirements for a tailored quote.",
+    a: "Yes, we offer custom-made supply for all our product lines including flanges, fasteners, wires, profiles, bright bars, and pipes. Contact our sales team with your specific requirements for a tailored quote.",
   },
 ];
 
