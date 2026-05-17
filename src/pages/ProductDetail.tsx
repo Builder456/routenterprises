@@ -100,7 +100,7 @@ const ProductDetail = () => {
 
               <div className="flex flex-wrap gap-3">
                 <a
-                  href="/#contact"
+                  href={`mailto:globalexport@routenterprises.com?subject=${encodeURIComponent(`Quote Request: ${product.name}`)}&body=${encodeURIComponent(`Hello Rout Enterprises team,\n\nI would like to request a quote for ${product.name}.\n\nDetails required:\n- Grade(s): \n- Size / Specification: \n- Quantity: \n- Destination Country / Port: \n- Required Delivery Date: \n- Additional Requirements: \n\nThank you.`)}`}
                   className="inline-flex items-center gap-2 bg-ember hover:bg-ember-glow px-6 py-3 rounded-md font-semibold text-primary-foreground transition-colors"
                 >
                   Request a Quote
