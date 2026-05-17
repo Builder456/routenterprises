@@ -65,7 +65,7 @@ const ProductsSection = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-primary-foreground/70 text-lg max-w-2xl mx-auto"
           >
-            Manufactured to international standards and exported to industries across the globe.
+            Supplied to international standards and exported to industries across the globe.
           </motion.p>
         </motion.div>
 
