@@ -68,9 +68,6 @@ const Navbar = () => {
                   {l.label}
                 </a>
               ))}
-              <div className="pt-2 border-t border-primary-foreground/10">
-                <LanguageSwitcher />
-              </div>
             </div>
           </motion.div>
         )}
