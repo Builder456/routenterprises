@@ -131,16 +131,9 @@ const ProductDetail = () => {
               <CheckCircle2 className="w-5 h-5 text-ember" />
               <h2 className="font-display font-bold text-2xl text-foreground">Available Grades</h2>
             </div>
-            <div className="flex flex-wrap gap-2">
-              {product.grades.map((g) => (
-                <span
-                  key={g}
-                  className="px-4 py-2 rounded-md bg-card border border-border text-sm font-semibold text-foreground hover:border-ember hover:text-ember transition-colors"
-                >
-                  {g}
-                </span>
-              ))}
-            </div>
+            <p className="text-base text-foreground/90 leading-relaxed">
+              {product.grades.join(", ")}
+            </p>
           </motion.section>
 
           {/* Where It's Used */}
