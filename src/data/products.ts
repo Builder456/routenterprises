@@ -100,6 +100,14 @@ export const products: Product[] = [
     desc: "Rout Enterprises supplies a complete spectrum of stainless steel wires and wire rods drawn under controlled atmospheres to deliver exceptional surface finish, consistent diameter and predictable mechanical properties. Our wire rods are available in diameters from 5.5 mm to 39.5 mm in coil form, while finished wires range from ultra-fine 0.09 mm up to 15 mm in soft, half-hard, hard, spring-hard and bright-annealed tempers. Surface options include matte, bright, electro-polished, copper coated, nickel coated and PVC coated finishes. We offer cold-heading quality (CHQ) wires for fasteners, MIG, TIG, SAW and SMAW welding wires (ER308L, ER309L, ER316L, ER347, ER2209, ER2594), spring quality wires, EPQ wires for medical and electronic applications, knitting and weaving wires for filtration mesh, and high-tensile rope wires. Supplied to ASTM A580, A555, A313, AWS A5.9, DIN 17223, EN 10270-3, JIS G4309 and BS 2056 standards, our wires serve the welding consumables industry, automotive fastener buyers, spring makers, kitchenware brands, medical instrument makers and food processing equipment OEMs worldwide.",
     image: wiresImg,
     specs: ["ASTM / DIN / BS / JIS / AWS", "Bright & Annealed Finish"],
+    categories: [
+      "Wire Rods (Coil)", "Cold-Heading Quality (CHQ) Wires",
+      "MIG Welding Wires", "TIG Welding Wires", "SAW Welding Wires", "SMAW Welding Wires",
+      "Spring Quality Wires", "EPQ Wires", "Knitting & Weaving Wires",
+      "Bright Annealed Wires", "Electro-Polished Wires",
+      "Copper Coated Wires", "Nickel Coated Wires", "PVC Coated Wires",
+      "High-Tensile Rope Wires",
+    ],
     grades: [
       "201", "202", "204Cu", "301", "302", "303", "304", "304L",
       "310", "316", "316L", "316Ti", "321", "410", "420", "430",
