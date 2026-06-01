@@ -72,6 +72,12 @@ export const products: Product[] = [
     desc: "Our stainless steel fastener range is engineered to deliver dependable clamping force in the harshest operating environments. The portfolio covers hex bolts, heavy hex bolts, stud bolts, threaded rods, hex nuts, heavy hex nuts, nylock nuts, dome nuts, machine screws, self-tapping screws, socket head cap screws, countersunk screws, flat washers, spring washers and custom dowel screws in metric and imperial sizes from M3 to M64 and ¼\" to 4\". Each fastener is cold-forged or hot-forged, precision-threaded and finished with passivation, electro-polishing or PTFE coating depending on the service condition. We supply to ASTM A193 B8/B8M, A194 2H/8/8M, DIN 931/933/934/985, ISO 4014/4017/4032, ANSI/ASME B18.2.1, B18.2.2 and IS 1364 specifications. With strict in-house chemical and mechanical testing, our fasteners are widely used in petrochemical refineries, fertilizer units, power plants, shipyards, structural steel projects and pressure vessel assemblies where failure is never an option.",
     image: fastenersImg,
     specs: ["ASTM A193/A194", "DIN 931/934 / ISO 4014", "ANSI B18.6.3"],
+    categories: [
+      "Hex Bolts", "Heavy Hex Bolts", "Stud Bolts", "Threaded Rods",
+      "Hex Nuts", "Heavy Hex Nuts", "Nylock Nuts", "Dome Nuts",
+      "Machine Screws", "Self-Tapping Screws", "Socket Head Cap Screws",
+      "Countersunk Screws", "Flat Washers", "Spring Washers", "Custom Dowel Screws",
+    ],
     grades: ["304", "304L", "316", "316L", "321", "410", "430", "Duplex 2205"],
     applications: [
       { label: "Construction", image: constructionImg },
