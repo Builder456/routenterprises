@@ -106,7 +106,7 @@ const ProductsSection = () => {
                 {p.grades && (
                   <div className="mb-3">
                     <p className="text-xs font-semibold text-foreground mb-1">Available Grades:</p>
-                    <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">{p.grades}</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">{p.grades.join(", ")}</p>
                   </div>
                 )}
                 <div className="mt-auto pt-4 flex items-center justify-between gap-3">
