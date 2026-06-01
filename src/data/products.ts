@@ -190,6 +190,13 @@ export const products: Product[] = [
     desc: "Our seamless stainless steel pipes and tubes are sourced using the extrusion, hot-piercing and cold-drawing routes to deliver superior concentricity, uniform wall thickness and a defect-free internal bore. The range spans pipes from ⅛\" NB to 24\" NB in schedules 5S, 10S, 40S, 80S, 160S and XXS, and tubes from 6 mm to 254 mm outer diameter with wall thickness from 0.5 mm to 30 mm, available in random, double-random, fixed and U-bent lengths. Surface finishes include pickled & annealed, bright annealed, polished (180/240/320/400 grit), electro-polished and AP/BA finishes for hygienic service. We supply to ASTM A312, A213, A269, A270, A789, A790, A249, EN 10216-5, DIN 17458, JIS G3459 and BS 3605 specifications, with every length pressure-tested, eddy-current tested, hydro-tested and supplied with PMI verification and EN 10204 3.1/3.2 certification. Trusted worldwide for refinery heat exchangers, boiler superheater coils, urea fertilizer reactors, instrumentation tubing, dairy and pharmaceutical sanitary lines, condenser tubes and high-purity hydrogen and oxygen service.",
     image: seamlessPipesImg,
     specs: ["ASTM A312 / A213", "Custom Lengths Available"],
+    categories: [
+      "Seamless Pipes (⅛\"–24\" NB)", "Seamless Tubes (6–254mm OD)",
+      "Heat Exchanger Tubes", "Boiler Tubes", "Condenser Tubes",
+      "Instrumentation Tubes", "Hydraulic Tubes", "U-Bent Tubes",
+      "Sanitary / Pharma Tubes", "Electro-Polished Tubes",
+      "Pickled & Annealed Pipes", "Bright Annealed Tubes",
+    ],
     grades: ["304", "304L", "316", "316L", "321", "310S", "317L", "Duplex 2205"],
     applications: [
       { label: "Oil & Gas", image: oilGasImg },
