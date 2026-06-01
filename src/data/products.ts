@@ -133,6 +133,11 @@ export const products: Product[] = [
     desc: "Our stainless steel profiles cover the entire structural and architectural requirement spectrum — from precision cold-drawn sections to robust hot-rolled and laser-fused profiles. The range includes flat bars (20×5 mm to 150×30 mm), equal angles (20×20 mm to 150×150 mm), unequal angles, U-channels, C-channels, T-bars, I-beams, H-beams, hexagonal sections, square sections and custom-drawn special profiles built to client drawings. Profiles are produced by partner mills using hot rolling, cold drawing, laser welding and press braking, then surface-finished by pickling, shot blasting, No.4 satin, hairline brushed or mirror polished (No.8) treatments. We comply with ASTM A276, A479, A484, EN 10088-3, EN 10056, JIS G4317 and DIN 1028 standards. Length tolerances are held to ±2 mm and straightness within 1 mm per metre. These profiles are the backbone of architectural façades, food processing platforms, marine deck structures, chemical plant supports, conveyor frames, escalator components and railway coach interiors, where strength, corrosion resistance and a premium aesthetic finish must coexist.",
     image: profilesImg,
     specs: ["Hot & Cold Rolled", "Custom Sections Available"],
+    categories: [
+      "Flat Bars", "Equal Angles", "Unequal Angles", "U-Channels", "C-Channels",
+      "T-Bars", "I-Beams", "H-Beams", "Hexagonal Sections", "Square Sections",
+      "Laser-Fused Profiles", "Custom Drawn Profiles",
+    ],
     grades: ["303", "304", "304L", "304H", "316", "316L", "316Ti", "321", "630", "17-4PH"],
     applications: [
       { label: "Structural Engineering", image: constructionImg },
