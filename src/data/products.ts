@@ -159,6 +159,12 @@ export const products: Product[] = [
     desc: "Rout Enterprises supplies and exports premium-grade stainless steel bright bars engineered for the world's most demanding precision-machining applications. Our bright bar portfolio includes round bars from 2 mm to 600 mm diameter, hexagonal bars from 6 mm to 80 mm AF, square bars from 6 mm to 100 mm and forged round bars up to 600 mm, supplied in random, fixed or cut-to-length pieces. Supply conditions cover cold-drawn, peeled and polished, centreless ground, smooth turned, and reeled and polished finishes with h8, h9, h10 and h11 tolerance classes. Every bar undergoes 100% ultrasonic testing, eddy current testing, surface roughness inspection and dimensional verification with laser micrometers to ensure freedom from internal defects and consistent machinability. Supplied to ASTM A276, A484, A582, A564, EN 10088-3, DIN 17440, JIS G4303 and BS 970 specifications, our bright bars are the preferred raw material for CNC machined components, automotive shafts, pump and valve internals, surgical instruments, food machinery, aerospace fittings and oil and gas downhole tools.",
     image: brightBarsImg,
     specs: ["h8/h9/h11 Tolerance", "2–600mm Range"],
+    categories: [
+      "Round Bars (2–600mm)", "Hexagonal Bars (6–80mm AF)",
+      "Square Bars (6–100mm)", "Forged Round Bars (up to 600mm)",
+      "Cold Drawn Bars", "Peeled & Polished Bars",
+      "Centreless Ground Bars", "Smooth Turned Bars", "Reeled & Polished Bars",
+    ],
     grades: [
       "201", "202", "303", "304", "304L", "309", "310", "316", "316L",
       "317L", "321", "347", "410", "416", "420", "430", "431",
