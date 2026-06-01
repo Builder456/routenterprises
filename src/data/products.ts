@@ -42,6 +42,11 @@ export const products: Product[] = [
     desc: "Rout Enterprises supplies and exports a comprehensive range of stainless steel flanges including Slip-On, Weld Neck, Blind, Threaded, Socket Weld, Lap Joint, Reducing, Orifice, Long Weld Neck and Ring Type Joint (RTJ) flanges. Our flanges are sourced from premium forged billets and finished on CNC machines to guarantee dimensional accuracy, smooth sealing faces and complete inter-changeability with mating components. We supply sizes from ½\" up to 40\" in pressure classes 150 LBS, 300 LBS, 600 LBS, 900 LBS, 1500 LBS and 2500 LBS, conforming to ASME B16.5, ASME B16.47 Series A & B, MSS-SP44, API 6A, DIN, EN-1092-1, BS-4504, JIS and GOST standards. Every flange is hydro-tested, ultrasonically inspected and supplied with EN 10204 3.1/3.2 certification, making them the trusted choice for refineries, offshore platforms, fertilizer plants, LNG terminals and high-pressure pipeline networks across the globe.",
     image: flangesImg,
     specs: ["ASME B16.5 / B16.47", "DIN / JIS / BS / GOST"],
+    categories: [
+      "Slip-On Flanges", "Weld Neck Flanges", "Blind Flanges", "Threaded Flanges",
+      "Socket Weld Flanges", "Lap Joint Flanges", "Reducing Flanges",
+      "Orifice Flanges", "Long Weld Neck Flanges", "Ring Type Joint (RTJ) Flanges",
+    ],
     grades: [
       "F304", "F304L", "F304H", "F316", "F316L", "F316H",
       "F321", "F321H", "F347", "F347H", "F317L",
