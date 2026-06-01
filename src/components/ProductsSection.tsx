@@ -86,7 +86,7 @@ const ProductsSection = () => {
               animate={inView ? "visible" : "hidden"}
               variants={cardVariants}
               whileHover={{ y: -8, scale: 1.02, transition: { duration: 0.3 } }}
-              className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-300 flex flex-col"
+              className="group relative bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow duration-300 flex flex-col"
             >
               <Link to={`/products/${p.slug}`} className="relative h-56 overflow-hidden block">
                 <img
