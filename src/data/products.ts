@@ -26,6 +26,7 @@ export type Product = {
   image: string;
   specs: string[];
   grades: string[];
+  categories: string[];
   applications: ApplicationImage[];
   testing?: string;
   certifications?: string;
