@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getProductBySlug, products } from "@/data/products";
+import { slugify } from "@/lib/subcategory";
 
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
