@@ -1,16 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Download, ArrowRight, MoreVertical } from "lucide-react";
+import { Download, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { products } from "@/data/products";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
 
 const cardVariants = {
   hidden: () => ({
@@ -102,30 +95,8 @@ const ProductsSection = () => {
                   {p.name}
                 </h3>
               </Link>
-              <div className="absolute top-3 right-3 z-10">
-                <DropdownMenu>
-                  <DropdownMenuTrigger
-                    aria-label={`View ${p.name} categories`}
-                    className="flex items-center justify-center w-9 h-9 rounded-full bg-background/90 backdrop-blur-sm text-foreground shadow-md hover:bg-ember hover:text-primary-foreground transition-colors"
-                  >
-                    <MoreVertical className="w-4 h-4" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="end" className="w-64 max-h-80 overflow-y-auto bg-popover z-50">
-                    <DropdownMenuLabel className="text-ember font-display">
-                      {p.name} — Categories
-                    </DropdownMenuLabel>
-                    <DropdownMenuSeparator />
-                    {p.categories.map((c) => (
-                      <DropdownMenuItem key={c} asChild>
-                        <Link to={`/products/${p.slug}`} className="cursor-pointer text-sm">
-                          {c}
-                        </Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </div>
               <div className="p-6 flex flex-col flex-1">
+
                 <p className="text-sm text-muted-foreground mb-4">{p.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {p.specs.map((s) => (
