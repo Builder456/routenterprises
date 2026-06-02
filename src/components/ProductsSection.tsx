@@ -1,16 +1,9 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Download, ArrowRight, MoreVertical } from "lucide-react";
+import { Download, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { products } from "@/data/products";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+
 
 const cardVariants = {
   hidden: () => ({
