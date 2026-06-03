@@ -6,7 +6,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import { getProductBySlug, products } from "@/data/products";
-import { slugify } from "@/lib/subcategory";
 
 const ProductDetail = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -137,30 +136,6 @@ const ProductDetail = () => {
             </p>
           </motion.section>
 
-          {/* Categories / Sub-products */}
-          <section className="mt-16">
-            <div className="flex items-center gap-2 mb-2">
-              <CheckCircle2 className="w-5 h-5 text-ember" />
-              <h2 className="font-display font-bold text-2xl text-foreground">Product Categories</h2>
-            </div>
-            <p className="text-muted-foreground mb-6">
-              Explore each {product.name.toLowerCase()} category for detailed specs, images and a tailored quote.
-            </p>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-              {product.categories.map((c) => (
-                <Link
-                  key={c}
-                  to={`/products/${product.slug}/${slugify(c)}`}
-                  className="group bg-card border border-border rounded-lg p-4 shadow-card hover:shadow-card-hover hover:border-ember transition-all"
-                >
-                  <h3 className="font-display font-semibold text-foreground group-hover:text-ember transition-colors">
-                    {c}
-                  </h3>
-                  <p className="text-xs text-muted-foreground mt-1">View details →</p>
-                </Link>
-              ))}
-            </div>
-          </section>
 
           {/* Where It's Used */}
           <section className="mt-16">
