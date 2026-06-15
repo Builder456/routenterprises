@@ -4,6 +4,7 @@ import wiresImg from "@/assets/wires.jpg";
 import profilesImg from "@/assets/profiles.jpg";
 import brightBarsImg from "@/assets/bright-bars.jpg";
 import seamlessPipesImg from "@/assets/seamless-pipes.jpg";
+import coilsImg from "@/assets/coils.jpg";
 
 import oilGasImg from "@/assets/applications/oil-gas.jpg";
 import chemicalImg from "@/assets/applications/chemical.jpg";
