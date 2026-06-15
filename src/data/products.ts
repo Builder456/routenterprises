@@ -4,6 +4,7 @@ import wiresImg from "@/assets/wires.jpg";
 import profilesImg from "@/assets/profiles.jpg";
 import brightBarsImg from "@/assets/bright-bars.jpg";
 import seamlessPipesImg from "@/assets/seamless-pipes.jpg";
+import coilsImg from "@/assets/coils.jpg";
 
 import oilGasImg from "@/assets/applications/oil-gas.jpg";
 import chemicalImg from "@/assets/applications/chemical.jpg";
@@ -209,6 +210,41 @@ export const products: Product[] = [
     testing:
       "Hydrostatic Test, Eddy Current Test, Ultrasonic Test, Flattening Test, Flaring Test",
     catalogue: "/catalogues/Seamless_Pipes_Tubes.pdf",
+  },
+  {
+    slug: "stainless-steel-coils",
+    name: "Stainless Steel Coils",
+    brief:
+      "Cold-rolled and hot-rolled stainless steel coils in a wide spectrum of grades, finishes and thicknesses for forming, stamping, deep drawing and fabrication.",
+    desc: "Rout Enterprises supplies and exports premium stainless steel coils produced on state-of-the-art continuous hot-strip and cold-rolling mills, followed by annealing, pickling and skin-pass finishing to deliver exceptional surface quality, tight gauge tolerances and consistent mechanical properties. Our coil inventory spans hot-rolled coils (HRC) from 2.0 mm to 25.0 mm thickness in widths from 1000 mm to 2000 mm, and cold-rolled coils (CRC) from 0.20 mm to 6.0 mm thickness in widths from 600 mm to 1500 mm, supplied in edge-trimmed, mill-edge, slit-edge and custom-width configurations. Surface finishes include No.1 (hot-rolled, annealed, pickled), 2D (cold-rolled, annealed, pickled state-of-the-art pickling), 2B (cold-rolled, annealed, pickled, skin-passed), BA (bright annealed), No.3, No.4, No.6, No.7 and No.8 (mirror) brushed or polished finishes, as well as embossed, chequered and colour-coated (PE, PVDF) options. Every coil is supplied with certified mill test reports conforming to ASTM A240, A480, A167, EN 10088-2, EN 10028-7, JIS G4305, JIS G4312 and DIN 17440 standards. Our coils are the preferred feedstock for automotive exhaust systems, kitchenware and appliance panels, elevator decorative sheets, chemical storage tanks, pressure vessel shells, roofing and cladding profiles, precision strip for electronic connectors, and deep-drawn cookware and hollowware manufactured by leading OEMs and contract manufacturers worldwide.",
+    image: coilsImg,
+    specs: ["ASTM A240 / A480 / A167", "EN 10088-2 / JIS G4305", "Hot & Cold Rolled"],
+    categories: [
+      "Hot Rolled Coils (HRC)", "Cold Rolled Coils (CRC)", "Slit Coils",
+      "Edge-Trimmed Coils", "Precision Strip Coils", "Chequered Coils",
+      "Embossed Coils", "Colour-Coated Coils (PE/PVDF)",
+      "No.1 Finish Coils", "2B Finish Coils", "BA Finish Coils",
+      "Mirror Finish Coils", "Brushed Finish Coils",
+    ],
+    grades: [
+      "201", "202", "301", "304", "304L", "304H", "309", "309S", "310", "310S",
+      "316", "316L", "316Ti", "317L", "321", "321H", "347", "347H", "409", "410",
+      "420", "430", "439", "441", "444", "2205 (Duplex)", "2507 (Super Duplex)",
+      "904L (Super Austenitic)",
+    ],
+    applications: [
+      { label: "Automotive", image: automotiveImg },
+      { label: "Construction", image: constructionImg },
+      { label: "Food Processing", image: foodImg },
+      { label: "Chemical & Petrochemical", image: chemicalImg },
+      { label: "Oil & Gas", image: oilGasImg },
+      { label: "Power Generation", image: powerImg },
+    ],
+    testing:
+      "Tensile Test, Yield Strength Test, Elongation Test, Hardness Test (Rockwell & Vickers), Flattening Test, Flaring Test, IGC Test (ASTM A262 Practice E & A), PMI Test (X-ray Fluorescence & OES), Surface Roughness Measurement, Dimensional Gauge Verification, Coil Crown & Wedge Measurement, Coil Camber Inspection",
+    certifications:
+      "ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, EN 10204 3.1/3.2, PED 2014/68/EU, NACE MR0175, AD 2000-Merkblatt W2/W10, TUV Certified",
+    catalogue: null,
   },
 ];
 
