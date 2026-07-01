@@ -32,6 +32,7 @@ export type Product = {
   testing?: string;
   certifications?: string;
   catalogue?: string | null;
+  additionalOfferings?: string[];
 };
 
 export const products: Product[] = [
@@ -65,6 +66,9 @@ export const products: Product[] = [
       { label: "Ship Building", image: marineImg },
       { label: "Aerospace", image: aerospaceImg },
       { label: "Food Processing", image: foodImg },
+    ],
+    additionalOfferings: [
+      "Carbon Flanges", "Inconel Flanges", "Monel Flanges", "Alloy Flanges", "Hastelloy Flanges",
     ],
     testing:
       "Tensile Test (Screw Driven & Computerized), Impact Test (RT & Sub Zero), Hardness Test, IGC Test, Dye Penetrate Test, Ultrasonic Test, PMI Test (X-ray & OES), Surface Roughness Test",
@@ -250,6 +254,9 @@ export const products: Product[] = [
       { label: "Chemical & Petrochemical", image: chemicalImg },
       { label: "Oil & Gas", image: oilGasImg },
       { label: "Power Generation", image: powerImg },
+    ],
+    additionalOfferings: [
+      "Galvanized Coils", "Galvalume Coils", "Cold Rolled Coils", "Hot Rolled Coils",
     ],
     testing:
       "Tensile Test, Yield Strength Test, Elongation Test, Hardness Test (Rockwell & Vickers), Flattening Test, Flaring Test, IGC Test (ASTM A262 Practice E & A), PMI Test (X-ray Fluorescence & OES), Surface Roughness Measurement, Dimensional Gauge Verification, Coil Crown & Wedge Measurement, Coil Camber Inspection",
