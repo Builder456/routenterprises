@@ -255,6 +255,9 @@ export const products: Product[] = [
       { label: "Oil & Gas", image: oilGasImg },
       { label: "Power Generation", image: powerImg },
     ],
+    additionalOfferings: [
+      "Galvanized Coils", "Galvalume Coils", "Cold Rolled Coils", "Hot Rolled Coils",
+    ],
     testing:
       "Tensile Test, Yield Strength Test, Elongation Test, Hardness Test (Rockwell & Vickers), Flattening Test, Flaring Test, IGC Test (ASTM A262 Practice E & A), PMI Test (X-ray Fluorescence & OES), Surface Roughness Measurement, Dimensional Gauge Verification, Coil Crown & Wedge Measurement, Coil Camber Inspection",
     certifications:
