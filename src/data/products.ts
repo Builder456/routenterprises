@@ -32,6 +32,7 @@ export type Product = {
   testing?: string;
   certifications?: string;
   catalogue?: string | null;
+  additionalOfferings?: string[];
 };
 
 export const products: Product[] = [
