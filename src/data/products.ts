@@ -52,6 +52,11 @@ export const products: Product[] = [
       "F304", "F304L", "F304H", "F316", "F316L", "F316H",
       "F321", "F321H", "F347", "F347H", "F317L",
       "F51 (Duplex)", "F53 (Super Duplex)", "F60",
+      "A105 / A105N (Carbon)", "A350 LF2 / LF3 (Carbon)", "A694 F52/F60/F65 (Carbon)",
+      "Inconel 600 / 625 / 718", "Inconel 800 / 800H / 825",
+      "Monel 400 / K500",
+      "Alloy F1 / F5 / F9 / F11 / F12 / F22 / F91",
+      "Hastelloy C276 / C22 / B2 / X",
     ],
     applications: [
       { label: "Oil & Gas", image: oilGasImg },
