@@ -5,6 +5,11 @@ import profilesImg from "@/assets/profiles.jpg";
 import brightBarsImg from "@/assets/bright-bars.jpg";
 import seamlessPipesImg from "@/assets/seamless-pipes.jpg";
 import coilsImg from "@/assets/coils.jpg";
+import sheetsPlatesImg from "@/assets/sheets-plates.jpg";
+import coilHrImg from "@/assets/coil-hr.jpg";
+import coilCrImg from "@/assets/coil-cr.jpg";
+import coilGiImg from "@/assets/coil-gi.jpg";
+import coilGlImg from "@/assets/coil-gl.jpg";
 
 import oilGasImg from "@/assets/applications/oil-gas.jpg";
 import chemicalImg from "@/assets/applications/chemical.jpg";
