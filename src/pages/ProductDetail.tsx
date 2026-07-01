@@ -42,7 +42,11 @@ const ProductDetail = () => {
     { title: "Certifications", body: product.certifications },
   ].filter((s) => s.body);
 
-  const related = products.filter((p) => p.slug !== product.slug).slice(0, 3);
+  const related = products.filter((p) => p.slug !== product.slug && !p.hidden).slice(0, 3);
+  const coilVariantSlugs = ["hot-rolled-coils", "cold-rolled-coils", "galvanized-coils", "galvalume-coils"];
+  const coilVariants = product.slug === "stainless-steel-coils"
+    ? products.filter((p) => coilVariantSlugs.includes(p.slug))
+    : [];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -137,26 +141,7 @@ const ProductDetail = () => {
           </motion.section>
 
           {/* Additional Materials & Products */}
-          {product.additionalOfferings && product.additionalOfferings.length > 0 && (
-            <motion.section
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mt-10"
-            >
-              <div className="flex items-center gap-2 mb-5">
-                <CheckCircle2 className="w-5 h-5 text-ember" />
-                <h2 className="font-display font-bold text-2xl text-foreground">
-                  We Also Offer
-                </h2>
-              </div>
-              <p className="text-base text-foreground/90 leading-relaxed">
-                In addition to our standard {product.name.toLowerCase()}, we also supply and export{" "}
-                {product.additionalOfferings.join(", ")} to meet diverse industrial requirements across refineries, offshore platforms, chemical plants, marine engineering, power generation and high-temperature pipeline networks worldwide.
-              </p>
-            </motion.section>
-          )}
+
 
 
           {/* Where It's Used */}
@@ -218,6 +203,27 @@ const ProductDetail = () => {
                 </motion.div>
               ))}
             </div>
+          )}
+
+          {coilVariants.length > 0 && (
+            <section className="mt-20">
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">
+                Other Coil Products We Offer
+              </h2>
+              <p className="text-muted-foreground mb-8">Explore our full range of coil products, each on a dedicated page with detailed grades and specifications.</p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {coilVariants.map((p) => (
+                  <Link key={p.slug} to={`/products/${p.slug}`} className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1">
+                    <div className="h-40 overflow-hidden">
+                      <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-display font-bold text-foreground group-hover:text-ember transition-colors">{p.name}</h3>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
           )}
 
           <section className="mt-20">

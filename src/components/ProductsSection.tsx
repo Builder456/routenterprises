@@ -2,7 +2,9 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Download, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { products } from "@/data/products";
+import { products as allProducts } from "@/data/products";
+
+const products = allProducts.filter((p) => !p.hidden);
 
 
 const cardVariants = {
