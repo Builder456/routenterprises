@@ -37,7 +37,7 @@ export type Product = {
   testing?: string;
   certifications?: string;
   catalogue?: string | null;
-  additionalOfferings?: string[];
+  hidden?: boolean;
 };
 
 export const products: Product[] = [
