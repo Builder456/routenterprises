@@ -205,6 +205,27 @@ const ProductDetail = () => {
             </div>
           )}
 
+          {coilVariants.length > 0 && (
+            <section className="mt-20">
+              <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-2">
+                Other Coil Products We Offer
+              </h2>
+              <p className="text-muted-foreground mb-8">Explore our full range of coil products, each on a dedicated page with detailed grades and specifications.</p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {coilVariants.map((p) => (
+                  <Link key={p.slug} to={`/products/${p.slug}`} className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-all hover:-translate-y-1">
+                    <div className="h-40 overflow-hidden">
+                      <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                    </div>
+                    <div className="p-4">
+                      <h3 className="font-display font-bold text-foreground group-hover:text-ember transition-colors">{p.name}</h3>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          )}
+
           <section className="mt-20">
             <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-8">
               Explore Other Products
