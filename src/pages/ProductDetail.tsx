@@ -137,26 +137,7 @@ const ProductDetail = () => {
           </motion.section>
 
           {/* Additional Materials & Products */}
-          {product.additionalOfferings && product.additionalOfferings.length > 0 && (
-            <motion.section
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-              className="mt-10"
-            >
-              <div className="flex items-center gap-2 mb-5">
-                <CheckCircle2 className="w-5 h-5 text-ember" />
-                <h2 className="font-display font-bold text-2xl text-foreground">
-                  We Also Offer
-                </h2>
-              </div>
-              <p className="text-base text-foreground/90 leading-relaxed">
-                In addition to our standard {product.name.toLowerCase()}, we also supply and export{" "}
-                {product.additionalOfferings.join(", ")} to meet diverse industrial requirements across refineries, offshore platforms, chemical plants, marine engineering, power generation and high-temperature pipeline networks worldwide.
-              </p>
-            </motion.section>
-          )}
+
 
 
           {/* Where It's Used */}
