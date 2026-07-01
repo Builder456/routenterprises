@@ -42,7 +42,11 @@ const ProductDetail = () => {
     { title: "Certifications", body: product.certifications },
   ].filter((s) => s.body);
 
-  const related = products.filter((p) => p.slug !== product.slug).slice(0, 3);
+  const related = products.filter((p) => p.slug !== product.slug && !p.hidden).slice(0, 3);
+  const coilVariantSlugs = ["hot-rolled-coils", "cold-rolled-coils", "galvanized-coils", "galvalume-coils"];
+  const coilVariants = product.slug === "stainless-steel-coils"
+    ? products.filter((p) => coilVariantSlugs.includes(p.slug))
+    : [];
 
   return (
     <div className="min-h-screen flex flex-col">
