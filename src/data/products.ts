@@ -46,9 +46,9 @@ export const products: Product[] = [
     name: "Stainless Steel Flanges",
     brief:
       "Precision-forged stainless steel flanges engineered for leak-proof pipeline joints across high-pressure and high-temperature service.",
-    desc: "Rout Enterprises supplies and exports a comprehensive range of stainless steel flanges including Slip-On, Weld Neck, Blind, Threaded, Socket Weld, Lap Joint, Reducing, Orifice, Long Weld Neck and Ring Type Joint (RTJ) flanges. Our flanges are sourced from premium forged billets and finished on CNC machines to guarantee dimensional accuracy, smooth sealing faces and complete inter-changeability with mating components. We supply sizes from ½\" up to 40\" in pressure classes 150 LBS, 300 LBS, 600 LBS, 900 LBS, 1500 LBS and 2500 LBS, conforming to ASME B16.5, ASME B16.47 Series A & B, MSS-SP44, API 6A, DIN, EN-1092-1, BS-4504, JIS and GOST standards. Every flange is hydro-tested, ultrasonically inspected and supplied with EN 10204 3.1/3.2 certification, making them the trusted choice for refineries, offshore platforms, fertilizer plants, LNG terminals and high-pressure pipeline networks across the globe. In addition to stainless steel, we also manufacture and supply flanges in Carbon Steel (A105, A350 LF2/LF3, A694 F52/F60/F65), Inconel (600, 625, 718, 800/800H, 825), Monel (400, K500), Alloy Steel (A182 F1, F5, F9, F11, F12, F22, F91) and Hastelloy (C276, C22, B2, X) grades, offering the same dimensional precision and certification for critical-service applications in chemical processing, marine engineering, aerospace and high-temperature power plants.",
+    desc: "Rout Enterprises supplies and exports a comprehensive range of stainless steel flanges including Slip-On, Weld Neck, Blind, Threaded, Socket Weld, Lap Joint, Reducing, Orifice, Long Weld Neck and Ring Type Joint (RTJ) flanges. Our flanges are sourced from premium forged billets and finished on CNC machines to guarantee dimensional accuracy, smooth sealing faces and complete inter-changeability with mating components. We supply sizes from ½\" up to 40\" in pressure classes 150 LBS, 300 LBS, 600 LBS, 900 LBS, 1500 LBS and 2500 LBS, conforming to ASME B16.5, ASME B16.47 Series A & B, MSS-SP44, API 6A, DIN, EN-1092-1, BS-4504, JIS and GOST standards. Every flange is hydro-tested, ultrasonically inspected and supplied with EN 10204 3.1/3.2 certification, making them the trusted choice for refineries, offshore platforms, fertilizer plants, LNG terminals and high-pressure pipeline networks across the globe.",
     image: flangesImg,
-    specs: ["ASME B16.5 / B16.47", "DIN / JIS / BS / GOST", "ASTM A105 / A350 / A694 / A182", "ASTM B564 (Inconel/Monel/Hastelloy)"],
+    specs: ["ASME B16.5 / B16.47", "DIN / JIS / BS / GOST", "ASTM A182 / A240"],
     categories: [
       "Slip-On Flanges", "Weld Neck Flanges", "Blind Flanges", "Threaded Flanges",
       "Socket Weld Flanges", "Lap Joint Flanges", "Reducing Flanges",
@@ -58,11 +58,6 @@ export const products: Product[] = [
       "F304", "F304L", "F304H", "F316", "F316L", "F316H",
       "F321", "F321H", "F347", "F347H", "F317L",
       "F51 (Duplex)", "F53 (Super Duplex)", "F60",
-      "A105 / A105N (Carbon)", "A350 LF2 / LF3 (Carbon)", "A694 F52/F60/F65 (Carbon)",
-      "Inconel 600 / 625 / 718", "Inconel 800 / 800H / 825",
-      "Monel 400 / K500",
-      "Alloy F1 / F5 / F9 / F11 / F12 / F22 / F91",
-      "Hastelloy C276 / C22 / B2 / X",
     ],
     applications: [
       { label: "Oil & Gas", image: oilGasImg },
@@ -71,9 +66,6 @@ export const products: Product[] = [
       { label: "Ship Building", image: marineImg },
       { label: "Aerospace", image: aerospaceImg },
       { label: "Food Processing", image: foodImg },
-    ],
-    additionalOfferings: [
-      "Carbon Flanges", "Inconel Flanges", "Monel Flanges", "Alloy Flanges", "Hastelloy Flanges",
     ],
     testing:
       "Tensile Test (Screw Driven & Computerized), Impact Test (RT & Sub Zero), Hardness Test, IGC Test, Dye Penetrate Test, Ultrasonic Test, PMI Test (X-ray & OES), Surface Roughness Test",
