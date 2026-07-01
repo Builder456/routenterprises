@@ -222,27 +222,21 @@ export const products: Product[] = [
     name: "Stainless Steel Coils",
     brief:
       "Cold-rolled and hot-rolled stainless steel coils in a wide spectrum of grades, finishes and thicknesses for forming, stamping, deep drawing and fabrication.",
-    desc: "Rout Enterprises supplies and exports premium stainless steel coils produced on state-of-the-art continuous hot-strip and cold-rolling mills, followed by annealing, pickling and skin-pass finishing to deliver exceptional surface quality, tight gauge tolerances and consistent mechanical properties. Our coil inventory spans hot-rolled coils (HRC) from 2.0 mm to 25.0 mm thickness in widths from 1000 mm to 2000 mm, and cold-rolled coils (CRC) from 0.20 mm to 6.0 mm thickness in widths from 600 mm to 1500 mm, supplied in edge-trimmed, mill-edge, slit-edge and custom-width configurations. Surface finishes include No.1 (hot-rolled, annealed, pickled), 2D (cold-rolled, annealed, pickled state-of-the-art pickling), 2B (cold-rolled, annealed, pickled, skin-passed), BA (bright annealed), No.3, No.4, No.6, No.7 and No.8 (mirror) brushed or polished finishes, as well as embossed, chequered and colour-coated (PE, PVDF) options. Every coil is supplied with certified mill test reports conforming to ASTM A240, A480, A167, EN 10088-2, EN 10028-7, JIS G4305, JIS G4312 and DIN 17440 standards. Our coils are the preferred feedstock for automotive exhaust systems, kitchenware and appliance panels, elevator decorative sheets, chemical storage tanks, pressure vessel shells, roofing and cladding profiles, precision strip for electronic connectors, and deep-drawn cookware and hollowware manufactured by leading OEMs and contract manufacturers worldwide. Beyond stainless steel, we also supply Galvanized Coils (DX51D, DX52D, DX53D, S280GD, S350GD, G90, G60), Galvalume Coils (DX51D+AZ, SGLCC, SGLCD), Cold Rolled Coils (SPCC, SPCD, SPCE, DC01, DC03, DC04, 1008, 1010) and Hot Rolled Coils (Q235, Q345, S235JR, S275JR, S355JR, SS400, A36) for construction, automotive body panels, roofing, appliances, general fabrication and structural engineering. These coils are offered in regular spangle, zero spangle, minimized spangle, oiled, dry, chromated and passivated surface treatments with full mill certification to ASTM A653, JIS G3302, EN 10346, JIS G3141, ASTM A1008, EN 10130, JIS G3131, ASTM A1011 and EN 10025 standards.",
+    desc: "Rout Enterprises supplies and exports premium stainless steel coils produced on state-of-the-art continuous hot-strip and cold-rolling mills, followed by annealing, pickling and skin-pass finishing to deliver exceptional surface quality, tight gauge tolerances and consistent mechanical properties. Our coil inventory spans hot-rolled coils (HRC) from 2.0 mm to 25.0 mm thickness in widths from 1000 mm to 2000 mm, and cold-rolled coils (CRC) from 0.20 mm to 6.0 mm thickness in widths from 600 mm to 1500 mm, supplied in edge-trimmed, mill-edge, slit-edge and custom-width configurations. Surface finishes include No.1 (hot-rolled, annealed, pickled), 2D (cold-rolled, annealed, pickled), 2B (cold-rolled, annealed, pickled, skin-passed), BA (bright annealed), No.3, No.4, No.6, No.7 and No.8 (mirror) brushed or polished finishes, as well as embossed, chequered and colour-coated (PE, PVDF) options. Every coil is supplied with certified mill test reports conforming to ASTM A240, A480, A167, EN 10088-2, EN 10028-7, JIS G4305, JIS G4312 and DIN 17440 standards. Our coils are the preferred feedstock for automotive exhaust systems, kitchenware and appliance panels, elevator decorative sheets, chemical storage tanks, pressure vessel shells, roofing and cladding profiles, precision strip for electronic connectors, and deep-drawn cookware and hollowware manufactured by leading OEMs and contract manufacturers worldwide.",
     image: coilsImg,
-    specs: ["ASTM A240 / A480 / A167", "EN 10088-2 / JIS G4305", "Hot & Cold Rolled", "ASTM A653 / JIS G3302 / EN 10346 (Galvanized/Galvalume)", "JIS G3141 / ASTM A1008 / EN 10130 (CRC)", "JIS G3131 / ASTM A1011 / EN 10025 (HRC)"],
+    specs: ["ASTM A240 / A480 / A167", "EN 10088-2 / JIS G4305", "Hot & Cold Rolled"],
     categories: [
-      "Hot Rolled Coils (HRC)", "Cold Rolled Coils (CRC)", "Slit Coils",
+      "Hot Rolled SS Coils", "Cold Rolled SS Coils", "Slit Coils",
       "Edge-Trimmed Coils", "Precision Strip Coils", "Chequered Coils",
       "Embossed Coils", "Colour-Coated Coils (PE/PVDF)",
       "No.1 Finish Coils", "2B Finish Coils", "BA Finish Coils",
       "Mirror Finish Coils", "Brushed Finish Coils",
-      "Galvanized Coils (GI)", "Galvalume Coils (GL)",
     ],
     grades: [
       "201", "202", "301", "304", "304L", "304H", "309", "309S", "310", "310S",
       "316", "316L", "316Ti", "317L", "321", "321H", "347", "347H", "409", "410",
       "420", "430", "439", "441", "444", "2205 (Duplex)", "2507 (Super Duplex)",
       "904L (Super Austenitic)",
-      "DX51D / DX52D / DX53D / S280GD / S350GD (Galvanized)",
-      "G90 / G60 (Galvanized)", "DX51D+AZ / SGLCC / SGLCD (Galvalume)",
-      "SPCC / SPCD / SPCE / DC01 / DC03 / DC04 (Cold Rolled)",
-      "1008 / 1010 (Cold Rolled)", "Q235 / Q345 / SS400 / A36 (Hot Rolled)",
-      "S235JR / S275JR / S355JR (Hot Rolled)",
     ],
     applications: [
       { label: "Automotive", image: automotiveImg },
@@ -252,14 +246,170 @@ export const products: Product[] = [
       { label: "Oil & Gas", image: oilGasImg },
       { label: "Power Generation", image: powerImg },
     ],
-    additionalOfferings: [
-      "Galvanized Coils", "Galvalume Coils", "Cold Rolled Coils", "Hot Rolled Coils",
-    ],
     testing:
       "Tensile Test, Yield Strength Test, Elongation Test, Hardness Test (Rockwell & Vickers), Flattening Test, Flaring Test, IGC Test (ASTM A262 Practice E & A), PMI Test (X-ray Fluorescence & OES), Surface Roughness Measurement, Dimensional Gauge Verification, Coil Crown & Wedge Measurement, Coil Camber Inspection",
     certifications:
       "ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, EN 10204 3.1/3.2, PED 2014/68/EU, NACE MR0175, AD 2000-Merkblatt W2/W10, TUV Certified",
     catalogue: null,
+  },
+  {
+    slug: "stainless-steel-sheets-plates",
+    name: "Stainless Steel Sheets & Plates",
+    brief:
+      "High-integrity stainless steel sheets and plates in a full range of thicknesses, finishes and grades for fabrication, cladding and pressure-vessel service.",
+    desc: "Rout Enterprises supplies and exports premium stainless steel sheets and plates rolled on modern hot and cold reversing mills, followed by annealing, pickling, levelling and precision cut-to-size operations to deliver flat, defect-free products with tight thickness tolerances and superior surface quality. Our sheet range covers 0.30 mm to 6.0 mm thickness, while plates span from 6.0 mm up to 150 mm thickness in widths from 1000 mm to 3000 mm and lengths up to 12000 mm, supplied in mill-edge, trimmed-edge and custom-cut formats. Surface finishes include No.1, 2B, 2D, BA, No.3, No.4, No.8 mirror, hairline, chequered, embossed and PVC-film protected options. Every sheet and plate is supplied with EN 10204 3.1/3.2 mill test certificates conforming to ASTM A240, ASTM A480, ASME SA240, EN 10028-7, EN 10088-2, JIS G4304, JIS G4305 and DIN 17440 specifications. Widely used for pressure vessels, storage tanks, heat exchangers, architectural cladding, kitchen equipment, dairy and pharmaceutical fabrication, chemical processing equipment and shipbuilding, our sheets and plates are trusted by fabricators and EPC contractors across 30+ countries.",
+    image: sheetsPlatesImg,
+    specs: ["ASTM A240 / A480", "EN 10028-7 / EN 10088-2", "0.30 mm – 150 mm"],
+    categories: [
+      "Hot Rolled Plates", "Cold Rolled Sheets", "Boiler Quality Plates",
+      "Chequered Plates", "Perforated Sheets", "Embossed Sheets",
+      "2B Finish Sheets", "BA Finish Sheets", "No.4 Brushed Sheets",
+      "Mirror (No.8) Polished Sheets", "PVC Coated Sheets",
+    ],
+    grades: [
+      "201", "202", "301", "304", "304L", "304H", "309", "309S", "310", "310S",
+      "316", "316L", "316Ti", "317L", "321", "321H", "347", "409", "410",
+      "420", "430", "439", "441", "2205 (Duplex)", "2507 (Super Duplex)", "904L",
+    ],
+    applications: [
+      { label: "Pressure Vessels", image: chemicalImg },
+      { label: "Food Processing", image: foodImg },
+      { label: "Ship Building", image: marineImg },
+      { label: "Architectural Cladding", image: constructionImg },
+      { label: "Pharmaceutical", image: pharmaImg },
+      { label: "Power Generation", image: powerImg },
+    ],
+    testing:
+      "Tensile Test, Impact Test, Hardness Test, IGC Test, Ultrasonic Test, PMI Test, Flattening Test",
+    catalogue: null,
+  },
+  {
+    slug: "hot-rolled-coils",
+    name: "Hot Rolled Coils (HRC)",
+    brief:
+      "Heavy-gauge hot rolled steel coils with mill-scale finish, engineered for structural, automotive and general fabrication applications.",
+    desc: "Rout Enterprises supplies and exports high-quality Hot Rolled Coils (HRC) produced on state-of-the-art continuous hot-strip mills where reheated slabs are progressively rolled through roughing and finishing stands to deliver consistent mechanical properties, uniform thickness and superior formability. Our HRC range covers thicknesses from 1.20 mm to 25.4 mm and widths from 900 mm to 2100 mm, supplied in coil weights up to 30 metric tonnes, in mill-edge, slit-edge and trimmed-edge configurations. Available conditions include as-rolled, pickled & oiled (HRPO), skin-passed and normalised, giving fabricators the surface quality and dimensional accuracy needed for downstream forming, welding and machining. All HRC lots are supplied with certified mill test reports conforming to ASTM A1011, ASTM A36, ASTM A572, JIS G3131, EN 10025-2, EN 10111 and IS 2062 standards. Our Hot Rolled Coils are the backbone of structural steel fabrication, LPG cylinders, pipe & tube making, automotive chassis and wheel rims, agricultural equipment, railway wagons, shipbuilding hull plates, storage tanks, cold-forming pre-material and heavy engineering fabrication across construction, infrastructure and OEM industries worldwide.",
+    image: coilHrImg,
+    specs: ["ASTM A1011 / A36", "JIS G3131 / EN 10025-2", "IS 2062", "1.20 mm – 25.4 mm"],
+    categories: [
+      "HR Coils (As-Rolled)", "HR Pickled & Oiled (HRPO)", "HR Skin-Passed Coils",
+      "HR Slit Coils", "HR Cut-to-Length Sheets", "Structural HR Coils",
+    ],
+    grades: [
+      "SS400", "A36", "A572 Gr.50", "Q235", "Q345", "Q355",
+      "S235JR", "S275JR", "S355JR", "SPHC", "SPHD", "SPHE",
+      "SAE 1006 / 1008 / 1010", "IS 2062 E250 / E350",
+    ],
+    applications: [
+      { label: "Construction", image: constructionImg },
+      { label: "Automotive", image: automotiveImg },
+      { label: "Ship Building", image: marineImg },
+      { label: "Oil & Gas Pipelines", image: oilGasImg },
+      { label: "Structural Fabrication", image: constructionImg },
+      { label: "Heavy Engineering", image: powerImg },
+    ],
+    testing:
+      "Tensile Test, Yield Strength Test, Elongation Test, Bend Test, Hardness Test, Chemical Composition Analysis, Coil Camber & Crown Verification",
+    catalogue: null,
+    hidden: true,
+  },
+  {
+    slug: "cold-rolled-coils",
+    name: "Cold Rolled Coils (CRC)",
+    brief:
+      "Precision cold rolled steel coils with smooth silvery finish, tight thickness tolerances and excellent formability for deep-drawing and appliance applications.",
+    desc: "Rout Enterprises supplies and exports premium Cold Rolled Coils (CRC) produced by passing pickled hot-rolled substrate through tandem cold-rolling mills, followed by continuous annealing, temper rolling and tension levelling to deliver an exceptionally smooth surface, tight gauge tolerances and consistent mechanical properties. Our CRC range spans thicknesses from 0.15 mm to 3.0 mm and widths from 600 mm to 1550 mm, offered in full-hard, quarter-hard, half-hard, deep-drawing and extra-deep-drawing tempers with oiled, dry, chromated or phosphated surface treatments. Every coil is supplied with EN 10204 3.1 mill test certificates conforming to JIS G3141, ASTM A1008, EN 10130, DIN 1623 and IS 513 standards. With superior surface flatness, weldability and paint-adhesion characteristics, our Cold Rolled Coils are widely used by automotive OEMs for body panels and inner structures, appliance manufacturers for washing machines, refrigerators and microwave housings, furniture and steel almirah makers, drum & barrel manufacturers, HVAC ducting fabricators, electrical panel and enclosure producers, and pre-painted coil (PPGI) manufacturers who require the highest surface quality as feedstock.",
+    image: coilCrImg,
+    specs: ["JIS G3141 / ASTM A1008", "EN 10130 / DIN 1623", "IS 513", "0.15 mm – 3.0 mm"],
+    categories: [
+      "CR Full-Hard Coils", "CR Deep-Drawing (DD) Coils", "CR Extra-Deep-Drawing (EDD) Coils",
+      "CR Slit Coils", "CR Cut-to-Length Sheets", "CR Skin-Passed Coils",
+    ],
+    grades: [
+      "SPCC", "SPCD", "SPCE", "SPCEN",
+      "DC01", "DC03", "DC04", "DC05", "DC06",
+      "CR1", "CR2", "CR3", "CR4",
+      "SAE 1008 / 1010", "IS 513 D / DD / EDD",
+    ],
+    applications: [
+      { label: "Automotive Body Panels", image: automotiveImg },
+      { label: "Appliances", image: constructionImg },
+      { label: "Furniture", image: constructionImg },
+      { label: "HVAC Ducting", image: powerImg },
+      { label: "Electrical Enclosures", image: powerImg },
+      { label: "Pre-Painted (PPGI) Feedstock", image: automotiveImg },
+    ],
+    testing:
+      "Tensile Test, Yield Strength Test, Elongation Test, Erichsen Cupping Test, Hardness Test (Rockwell/Vickers), Surface Roughness Test, Coil Camber Verification",
+    catalogue: null,
+    hidden: true,
+  },
+  {
+    slug: "galvanized-coils",
+    name: "Galvanized Coils (GI)",
+    brief:
+      "Zinc-coated hot-dip galvanized steel coils offering superior corrosion resistance and formability for roofing, construction and automotive applications.",
+    desc: "Rout Enterprises supplies and exports high-quality hot-dip Galvanized Coils (GI) produced on continuous galvanizing lines where cold-rolled substrate is cleaned, annealed and passed through a molten zinc bath at approximately 460°C, followed by air-knife wiping to precisely control the zinc coating weight and produce a uniform, tightly adherent zinc layer with the characteristic spangle pattern. Our GI coil range spans base-metal thicknesses from 0.14 mm to 4.0 mm and widths from 750 mm to 1550 mm, with zinc coating weights from 60 g/m² up to 600 g/m² (Z60 to Z600) available in regular spangle, minimized spangle, zero spangle and skin-passed finishes. Surface treatments include chromated, phosphated, oiled and anti-fingerprint options to enhance corrosion resistance during transport and storage. All coils are supplied with EN 10204 3.1 mill test certificates conforming to ASTM A653/A653M, JIS G3302, EN 10346, IS 277 and AS 1397 standards. Widely used for roofing and cladding sheets, purlins and structural framing, automotive underbody parts, air-conditioning ducts, electrical panels and enclosures, water tanks, cable trays, silos, greenhouses, highway crash barriers and pre-painted (PPGI) coil feedstock, our galvanized coils deliver 20+ years of corrosion protection in harsh atmospheric and industrial environments.",
+    image: coilGiImg,
+    specs: ["ASTM A653", "JIS G3302 / EN 10346", "IS 277 / AS 1397", "0.14 mm – 4.0 mm", "Z60 – Z600"],
+    categories: [
+      "Regular Spangle GI", "Minimized Spangle GI", "Zero Spangle GI",
+      "Skin-Passed GI", "Chromated GI", "Anti-Fingerprint GI",
+      "GI Slit Coils", "GI Cut-to-Length Sheets",
+    ],
+    grades: [
+      "DX51D+Z", "DX52D+Z", "DX53D+Z", "DX54D+Z",
+      "S220GD+Z", "S250GD+Z", "S280GD+Z", "S320GD+Z", "S350GD+Z",
+      "SGCC", "SGCD1", "SGCD2", "SGCD3", "SGH340 / SGH400 / SGH440 / SGH490 / SGH540",
+      "CS Type A/B/C (ASTM A653)", "FS Type A/B", "DDS", "EDDS",
+      "G60 / G90 / G115 / G140 / G185 / G210",
+      "IS 277 – GP / GC",
+    ],
+    applications: [
+      { label: "Roofing & Cladding", image: constructionImg },
+      { label: "Structural Framing", image: constructionImg },
+      { label: "Automotive Underbody", image: automotiveImg },
+      { label: "HVAC Ducting", image: powerImg },
+      { label: "Electrical Enclosures", image: powerImg },
+      { label: "Highway Crash Barriers", image: constructionImg },
+    ],
+    testing:
+      "Zinc Coating Weight Test (Triple-Spot Method), Adhesion / Bend Test, Salt-Spray Corrosion Test, Tensile & Yield Test, Hardness Test, Surface Appearance Inspection",
+    catalogue: null,
+    hidden: true,
+  },
+  {
+    slug: "galvalume-coils",
+    name: "Galvalume Coils (GL)",
+    brief:
+      "Aluminum-zinc alloy coated steel coils combining the corrosion resistance of aluminum with the sacrificial protection of zinc for long-life roofing and cladding.",
+    desc: "Rout Enterprises supplies and exports premium Galvalume Coils (GL / AZ / AZM) manufactured on continuous hot-dip coating lines where cold-rolled steel substrate is coated with a metallurgically-bonded alloy of approximately 55% aluminum, 43.5% zinc and 1.5% silicon, delivering up to four times the corrosion life of conventional galvanized coating in most atmospheric environments. Our Galvalume coil range covers base-metal thicknesses from 0.13 mm to 2.0 mm and widths from 750 mm to 1500 mm, with coating masses from AZ50 to AZ200 (50 g/m² to 200 g/m² total on both surfaces) supplied in regular spangle and smooth minimized-spangle finishes, with anti-finger-print (AFP), acrylic-passivated or chromated surface treatments. Every coil is supplied with EN 10204 3.1 mill test certificates conforming to ASTM A792, JIS G3321, EN 10346 and AS 1397 standards. The unique aluminum-rich barrier layer combined with the zinc-based cathodic protection at cut edges makes Galvalume the preferred substrate for long-span metal roofing, industrial and warehouse cladding, cold-storage panels, insulated sandwich panels, pre-engineered building (PEB) roofing, HVAC casings, appliance outer panels, ductwork, and pre-painted (PPGL) coil feedstock delivering 40+ year expected service life in coastal, industrial and rural environments.",
+    image: coilGlImg,
+    specs: ["ASTM A792", "JIS G3321 / EN 10346", "AS 1397", "0.13 mm – 2.0 mm", "AZ50 – AZ200"],
+    categories: [
+      "Regular Spangle GL", "Minimized Spangle GL", "Anti-Fingerprint GL",
+      "Acrylic-Passivated GL", "GL Slit Coils", "GL Cut-to-Length Sheets",
+    ],
+    grades: [
+      "DX51D+AZ", "DX52D+AZ", "DX53D+AZ", "DX54D+AZ",
+      "S220GD+AZ", "S250GD+AZ", "S280GD+AZ", "S320GD+AZ", "S350GD+AZ", "S550GD+AZ",
+      "SGLCC", "SGLCD", "SGLCDD",
+      "SGLH400 / SGLH440 / SGLH490 / SGLH540",
+      "CS Type A/B/C (ASTM A792)", "SS Grade 33 / 37 / 40 / 50 / 80",
+      "AZ50 / AZ70 / AZ100 / AZ150 / AZ200",
+    ],
+    applications: [
+      { label: "Metal Roofing", image: constructionImg },
+      { label: "Industrial Cladding", image: constructionImg },
+      { label: "Pre-Engineered Buildings", image: constructionImg },
+      { label: "Cold-Storage Panels", image: foodImg },
+      { label: "HVAC Casings", image: powerImg },
+      { label: "Pre-Painted (PPGL) Feedstock", image: automotiveImg },
+    ],
+    testing:
+      "Coating Weight Test, Salt-Spray Corrosion Test, Bend & Adhesion Test, Tensile & Yield Test, Erichsen Cupping Test, Surface Appearance Inspection",
+    catalogue: null,
+    hidden: true,
   },
 ];
 
