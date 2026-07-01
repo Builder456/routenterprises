@@ -67,6 +67,9 @@ export const products: Product[] = [
       { label: "Aerospace", image: aerospaceImg },
       { label: "Food Processing", image: foodImg },
     ],
+    additionalOfferings: [
+      "Carbon Flanges", "Inconel Flanges", "Monel Flanges", "Alloy Flanges", "Hastelloy Flanges",
+    ],
     testing:
       "Tensile Test (Screw Driven & Computerized), Impact Test (RT & Sub Zero), Hardness Test, IGC Test, Dye Penetrate Test, Ultrasonic Test, PMI Test (X-ray & OES), Surface Roughness Test",
     catalogue: "/catalogues/Flanges.pdf",
