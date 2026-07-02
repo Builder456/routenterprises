@@ -10,6 +10,14 @@ import coilHrImg from "@/assets/coil-hr.jpg";
 import coilCrImg from "@/assets/coil-cr.jpg";
 import coilGiImg from "@/assets/coil-gi.jpg";
 import coilGlImg from "@/assets/coil-gl.jpg";
+import roundBarImg from "@/assets/round-bar.jpg";
+import hexagonBarImg from "@/assets/hexagon-bar.jpg";
+import flatBarImg from "@/assets/flat-bar.jpg";
+import steelAnglesImg from "@/assets/steel-angles.jpg";
+import steelChannelsImg from "@/assets/steel-channels.jpg";
+import prePaintedCoilsImg from "@/assets/pre-painted-coils.jpg";
+import steelPipesTubesImg from "@/assets/steel-pipes-tubes.jpg";
+import tmtBarImg from "@/assets/tmt-bar.jpg";
 
 import oilGasImg from "@/assets/applications/oil-gas.jpg";
 import chemicalImg from "@/assets/applications/chemical.jpg";
