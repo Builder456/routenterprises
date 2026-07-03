@@ -642,6 +642,54 @@ export const products: Product[] = [
     catalogue: null,
     hidden: true,
   },
+  {
+    slug: "steel-wires",
+    name: "Steel Wires & Wire Rods",
+    brief:
+      "Low, medium and high-carbon steel wire rods and drawn wires for fasteners, springs, welding electrodes, tyre bead, PC strand, ACSR conductors and general engineering.",
+    desc: "Rout Enterprises supplies and exports the complete range of Steel Wire Rods and Drawn Steel Wires produced on modern high-speed no-twist Morgan / Danieli wire-rod mills followed by inline Stelmor controlled-cooling conveyors that deliver uniform pearlitic microstructure, tight size tolerance and superior surface quality — the same industry benchmark set by JSW Neosteel and other leading global wire-rod producers. Our wire-rod range covers diameters from 5.50 mm to 25.0 mm in coil weights of up to 2.5 metric tonnes, in low-carbon (LC), medium-carbon (MC), high-carbon (HC), free-cutting, cold-heading quality (CHQ), electrode quality (EQ) and tyre-bead-quality (TBQ) variants, with surface conditions covering as-rolled, pickled & phosphated, shot-blasted, lime-coated and borax-coated. Drawn wires are available from ultra-fine 0.10 mm up to 16.0 mm in soft, half-hard, hard, spring-hard, patented and galvanized tempers, with bright, matte, copper-coated, brass-coated (for tyre bead), zinc-coated (Class I – Class IV, up to 300 g/m²) and PVC-coated finishes. Manufactured to IS 7887 (wire rod), IS 4454 (spring steel wire), IS 280 (mild steel wire), IS 4826 / IS 2141 (GI wire), IS 6003 (indented PC wire), IS 6006 (uncoated stress-relieved strand), IS 398 (ACSR conductors), ASTM A510, A853, A227, A228, A229, A421, A416, A475, EN 10016, EN 10017, EN 10218, EN 10270-1/-2, EN 10264, DIN 17223, JIS G3505, JIS G3506, JIS G3507, JIS G3521, JIS G3522 and BS 5216 specifications, with EN 10204 3.1/3.2 mill test certification. The most widely used grades — following JSW / global reference standards — include: SAE 1006, 1008, 1010, 1012 (low-carbon CHQ for cold-heading of nuts, bolts, rivets, screws, nails and welding electrodes ER70S-6 / ER50-6); SAE 1018, 1022, 10B21, 10B22, 10B33 (boron-treated cold-heading grades for high-tensile fasteners 8.8 / 10.9); SAE 1035, 1040, 1045, 1050, 1055 (medium-carbon for automotive fasteners, chain, general engineering); SAE 1060, 1065, 1070, 1080, 1084 (high-carbon for springs, rope wire, hard drawn wire); SAE 1070, 1080, 1084 HC (tyre bead wire, upholstery springs, hose reinforcement); SWRH 42B, 52B, 62B, 72A/B, 77B, 82B (JIS G3506 high-carbon rod for PC strand, spring wire, rope wire, ACSR core); C9D, C10D, C12D, C15D, C18D, C20D, C26D, C30D, C40D, C45D, C50D, C60D, C68D, C72D, C76D, C80D, C82D, C86D, C92D (EN 10016-2 drawing quality); 30MnB4, 30MnB5, 38MnB5 (boron-alloyed CHQ per EN 10263-4); 20MnCr5, 16MnCr5, 15Cr3, 42CrMo4 (alloy CHQ for gears and high-strength fasteners); free-cutting grades 11SMn30, 11SMnPb30, 1215, 12L14 (per EN 10087 / ASTM A108) for automatic bar-turning; and Fe 410 / Fe 490 mild-steel wire (IS 280) for binding, weaving, fencing, barbed wire and general applications. Widely used by fastener manufacturers, spring makers, welding-electrode producers, PC-strand and pre-stressed concrete strand plants, ACSR conductor and OPGW producers, tyre-cord and tyre-bead makers, chain-link fencing units, cold-rolling & wire-drawing units, nail and staple manufacturers, umbrella-rib producers and general engineering industries across construction, automotive, electrical transmission, tyre and infrastructure sectors worldwide.",
+    image: steelWiresImg,
+    specs: [
+      "IS 7887 / IS 4454 / IS 280", "ASTM A510 / A853 / A227 / A228",
+      "EN 10016 / EN 10017 / EN 10270", "JIS G3505 / G3506 / G3521",
+      "5.50 mm – 25.0 mm (Rod)", "0.10 mm – 16.0 mm (Drawn)",
+    ],
+    categories: [
+      "Low-Carbon Wire Rods (LC)", "Medium-Carbon Wire Rods (MC)", "High-Carbon Wire Rods (HC)",
+      "Cold-Heading Quality (CHQ) Wire Rods", "Electrode Quality (EQ) Wire Rods",
+      "Tyre-Bead Quality (TBQ) Wire Rods", "Free-Cutting Wire Rods",
+      "Spring Steel Wires", "PC Strand / PC Wire", "ACSR Conductor Wire",
+      "Galvanized (GI) Steel Wires", "Binding & Barbed Wire",
+      "MIG / TIG / SAW Welding Wires", "Hard Drawn Wires", "Patented Wires",
+    ],
+    grades: [
+      "SAE 1006 / 1008 / 1010 / 1012 (LC CHQ)",
+      "SAE 1018 / 1022 / 10B21 / 10B22 / 10B33 (Boron CHQ)",
+      "SAE 1035 / 1040 / 1045 / 1050 / 1055 (MC)",
+      "SAE 1060 / 1065 / 1070 / 1080 / 1084 (HC)",
+      "SWRH 42B / 52B / 62B / 72A/B / 77B / 82B (JIS G3506)",
+      "C9D – C92D (EN 10016-2 Drawing Quality)",
+      "30MnB4 / 30MnB5 / 38MnB5 (EN 10263-4)",
+      "20MnCr5 / 16MnCr5 / 42CrMo4 (Alloy CHQ)",
+      "11SMn30 / 11SMnPb30 / 1215 / 12L14 (Free-Cutting)",
+      "Fe 410 / Fe 490 (IS 280 – Mild Steel Wire)",
+      "IS 4454 Grade 1 / 2 / 3 / 4 (Spring Wire)",
+      "IS 6003 / ASTM A416 (PC Strand)",
+    ],
+    applications: [
+      { label: "Fasteners (Nuts, Bolts, Rivets)", image: automotiveImg },
+      { label: "Springs & Automotive", image: automotiveImg },
+      { label: "Welding Electrodes", image: weldingImg },
+      { label: "PC Strand & Pre-Stressed Concrete", image: constructionImg },
+      { label: "ACSR Transmission Conductors", image: powerImg },
+      { label: "Tyre Bead & Tyre Cord", image: automotiveImg },
+    ],
+    testing:
+      "Tensile & UTS Test, Reduction of Area, Torsion Test, Wrap / Bend Test, Coiling Test (Spring Wire), Decarburization Depth, Micro-Structure (Pearlite %), Hardness Test, Chemical Composition (Spectro), Zinc Coating Weight (GI), Surface Roughness",
+    certifications: "BIS Certified, ISO 9001:2015, EN 10204 3.1/3.2",
+    catalogue: null,
+    hidden: true,
+  },
 ];
 
 export const getProductBySlug = (slug: string) => products.find((p) => p.slug === slug);
