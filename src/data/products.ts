@@ -18,6 +18,9 @@ import steelChannelsImg from "@/assets/steel-channels.jpg";
 import prePaintedCoilsImg from "@/assets/pre-painted-coils.jpg";
 import steelPipesTubesImg from "@/assets/steel-pipes-tubes.jpg";
 import tmtBarImg from "@/assets/tmt-bar.jpg";
+import steelBeamsImg from "@/assets/steel-beams.jpg";
+import msRoundBarImg from "@/assets/ms-round-bar.jpg";
+import steelWiresImg from "@/assets/steel-wires.jpg";
 
 import oilGasImg from "@/assets/applications/oil-gas.jpg";
 import chemicalImg from "@/assets/applications/chemical.jpg";
@@ -439,7 +442,7 @@ export const products: Product[] = [
     name: "Round Bars",
     brief: "Hot-rolled and forged carbon & alloy steel round bars for structural, engineering, forging and machining applications.",
     desc: "Rout Enterprises supplies and exports a comprehensive range of Steel Round Bars produced on modern rolling mills and open-die forging presses, delivering excellent internal soundness, uniform grain structure and tight dimensional accuracy. Our round bar range spans diameters from 8 mm to 350 mm (rolled) and up to 800 mm (forged), supplied in random, fixed and cut-to-length pieces with black, peeled, turned, ground or bright-drawn surface conditions. Every heat is refined through ladle-refining and vacuum-degassing routes to minimise inclusion content and guarantee consistent mechanical properties heat-to-heat. Supplied to IS 2062, IS 1875, IS 5517, IS 4432, ASTM A36, A29, A105, A182, A276, A322, A434, A519, EN 10025, EN 10083, EN 10088, DIN 17100, DIN 17200, JIS G3101, JIS G4051 and JIS G4053 standards with EN 10204 3.1/3.2 certification, our round bars are widely used in forging shops, shaft and axle manufacturing, gear blanks, engineering components, structural steel work, fasteners, machined parts, pump & valve internals and general engineering fabrication.",
-    image: roundBarImg,
+    image: msRoundBarImg,
     specs: ["IS 2062 / IS 1875", "ASTM A29 / A36 / A322", "EN 10025 / EN 10083", "JIS G3101 / G4051", "8 mm – 800 mm"],
     categories: ["Hot Rolled Round Bars", "Forged Round Bars", "Bright Drawn Round Bars", "Peeled & Turned Round Bars", "Black Round Bars"],
     grades: ["IS 2062 E250 / E350", "EN 8", "EN 9", "EN 19", "EN 24", "EN 31", "EN 36", "SAE 1018 / 1020 / 1040 / 1045", "SAE 4140 / 4340 / 8620", "C40 / C45 / C55", "S235JR / S275JR / S355JR", "20MnCr5 / 16MnCr5", "42CrMo4", "34CrNiMo6"],
@@ -610,7 +613,7 @@ export const products: Product[] = [
     brief:
       "Hot-rolled parallel-flange and taper-flange structural steel beams — HEA, HEB, HEM, IPE, IPN and W-series — for heavy structural, industrial and infrastructure construction.",
     desc: "Rout Enterprises supplies and exports the full international range of Hot-Rolled Structural Steel Beams, produced on universal beam mills with tight web and flange tolerances, excellent straightness and superior weldability. Our beam portfolio covers every major series used in global structural engineering:\n\n• IPN Series (DIN 1025-1 / Euronorm 24-62) — narrow, taper-flange I-beams from IPN 80 to IPN 600, used for medium-load structural framing, crane runways and column applications.\n\n• IPE Series (Euronorm 19-57 / EN 10365) — parallel-flange I-beams from IPE 80 to IPE 600 (with IPE-A, IPE-O and IPE-V variants), offering superior bending strength-to-weight ratio, ideal for floor beams, purlins and building frames.\n\n• HEA Series (EN 10365 / DIN 1025-3) — wide-flange 'light' beams from HEA 100 to HEA 1000, providing high bending capacity with reduced weight for columns and beams in commercial buildings and PEB structures.\n\n• HEB Series (EN 10365 / DIN 1025-2) — wide-flange 'medium/standard' beams from HEB 100 to HEB 1000, the workhorse for heavy columns, industrial mezzanines, bridges and offshore structures.\n\n• HEM Series (EN 10365 / DIN 1025-4) — wide-flange 'heavy' beams from HEM 100 to HEM 1000, used for the most demanding column and beam applications where maximum load-bearing and stiffness are required.\n\n• W Series (ASTM A6 / ASTM A992) — American wide-flange beams from W4 to W44 (e.g. W6×9, W8×31, W12×26, W14×90, W16×36, W18×50, W21×62, W24×84, W27×94, W30×108, W36×150), the standard structural section across North America for high-rise buildings, bridges, industrial plants and infrastructure.\n\nAlso available: UB / UC (British Universal Beams & Columns to BS 4-1), S-Series (American Standard I-Beams, ASTM A6), HP-Bearing Piles and Jumbo Beams. Supplied in standard 6 m, 12 m, 15 m and custom cut-to-length pieces, with black, primer-painted, shot-blasted or hot-dip galvanized finishes. Manufactured to EN 10025-2, EN 10365, EN 10034, DIN 1025, ASTM A6, ASTM A36, ASTM A572, ASTM A588, ASTM A992, ASTM A709, BS 4-1, IS 808, IS 12778 and JIS G3192 specifications, with EN 10204 3.1/3.2 mill test certification. Widely used in high-rise buildings, industrial plants, pre-engineered buildings (PEB), road and rail bridges, offshore platforms, power plants, warehouses, stadiums, airport terminals and heavy foundation piling worldwide.",
-    image: steelChannelsImg,
+    image: steelBeamsImg,
     specs: ["EN 10025-2 / EN 10365 / EN 10034", "ASTM A6 / A36 / A572 / A992", "DIN 1025-1/2/3/4", "IS 808 / IS 12778", "JIS G3192"],
     categories: [
       "IPN Beams (DIN 1025-1)", "IPE Beams (EN 10365)",
@@ -636,6 +639,54 @@ export const products: Product[] = [
       { label: "Industrial Structures", image: automotiveImg },
     ],
     testing: "Tensile Test, Yield & Elongation, Impact Test (Charpy), Bend Test, Ultrasonic Test, Dimensional & Straightness Inspection, Chemical Composition Analysis",
+    catalogue: null,
+    hidden: true,
+  },
+  {
+    slug: "steel-wires",
+    name: "Steel Wires & Wire Rods",
+    brief:
+      "Low, medium and high-carbon steel wire rods and drawn wires for fasteners, springs, welding electrodes, tyre bead, PC strand, ACSR conductors and general engineering.",
+    desc: "Rout Enterprises supplies and exports the complete range of Steel Wire Rods and Drawn Steel Wires produced on modern high-speed no-twist Morgan / Danieli wire-rod mills followed by inline Stelmor controlled-cooling conveyors that deliver uniform pearlitic microstructure, tight size tolerance and superior surface quality — the same industry benchmark set by JSW Neosteel and other leading global wire-rod producers. Our wire-rod range covers diameters from 5.50 mm to 25.0 mm in coil weights of up to 2.5 metric tonnes, in low-carbon (LC), medium-carbon (MC), high-carbon (HC), free-cutting, cold-heading quality (CHQ), electrode quality (EQ) and tyre-bead-quality (TBQ) variants, with surface conditions covering as-rolled, pickled & phosphated, shot-blasted, lime-coated and borax-coated. Drawn wires are available from ultra-fine 0.10 mm up to 16.0 mm in soft, half-hard, hard, spring-hard, patented and galvanized tempers, with bright, matte, copper-coated, brass-coated (for tyre bead), zinc-coated (Class I – Class IV, up to 300 g/m²) and PVC-coated finishes. Manufactured to IS 7887 (wire rod), IS 4454 (spring steel wire), IS 280 (mild steel wire), IS 4826 / IS 2141 (GI wire), IS 6003 (indented PC wire), IS 6006 (uncoated stress-relieved strand), IS 398 (ACSR conductors), ASTM A510, A853, A227, A228, A229, A421, A416, A475, EN 10016, EN 10017, EN 10218, EN 10270-1/-2, EN 10264, DIN 17223, JIS G3505, JIS G3506, JIS G3507, JIS G3521, JIS G3522 and BS 5216 specifications, with EN 10204 3.1/3.2 mill test certification. The most widely used grades — following JSW / global reference standards — include: SAE 1006, 1008, 1010, 1012 (low-carbon CHQ for cold-heading of nuts, bolts, rivets, screws, nails and welding electrodes ER70S-6 / ER50-6); SAE 1018, 1022, 10B21, 10B22, 10B33 (boron-treated cold-heading grades for high-tensile fasteners 8.8 / 10.9); SAE 1035, 1040, 1045, 1050, 1055 (medium-carbon for automotive fasteners, chain, general engineering); SAE 1060, 1065, 1070, 1080, 1084 (high-carbon for springs, rope wire, hard drawn wire); SAE 1070, 1080, 1084 HC (tyre bead wire, upholstery springs, hose reinforcement); SWRH 42B, 52B, 62B, 72A/B, 77B, 82B (JIS G3506 high-carbon rod for PC strand, spring wire, rope wire, ACSR core); C9D, C10D, C12D, C15D, C18D, C20D, C26D, C30D, C40D, C45D, C50D, C60D, C68D, C72D, C76D, C80D, C82D, C86D, C92D (EN 10016-2 drawing quality); 30MnB4, 30MnB5, 38MnB5 (boron-alloyed CHQ per EN 10263-4); 20MnCr5, 16MnCr5, 15Cr3, 42CrMo4 (alloy CHQ for gears and high-strength fasteners); free-cutting grades 11SMn30, 11SMnPb30, 1215, 12L14 (per EN 10087 / ASTM A108) for automatic bar-turning; and Fe 410 / Fe 490 mild-steel wire (IS 280) for binding, weaving, fencing, barbed wire and general applications. Widely used by fastener manufacturers, spring makers, welding-electrode producers, PC-strand and pre-stressed concrete strand plants, ACSR conductor and OPGW producers, tyre-cord and tyre-bead makers, chain-link fencing units, cold-rolling & wire-drawing units, nail and staple manufacturers, umbrella-rib producers and general engineering industries across construction, automotive, electrical transmission, tyre and infrastructure sectors worldwide.",
+    image: steelWiresImg,
+    specs: [
+      "IS 7887 / IS 4454 / IS 280", "ASTM A510 / A853 / A227 / A228",
+      "EN 10016 / EN 10017 / EN 10270", "JIS G3505 / G3506 / G3521",
+      "5.50 mm – 25.0 mm (Rod)", "0.10 mm – 16.0 mm (Drawn)",
+    ],
+    categories: [
+      "Low-Carbon Wire Rods (LC)", "Medium-Carbon Wire Rods (MC)", "High-Carbon Wire Rods (HC)",
+      "Cold-Heading Quality (CHQ) Wire Rods", "Electrode Quality (EQ) Wire Rods",
+      "Tyre-Bead Quality (TBQ) Wire Rods", "Free-Cutting Wire Rods",
+      "Spring Steel Wires", "PC Strand / PC Wire", "ACSR Conductor Wire",
+      "Galvanized (GI) Steel Wires", "Binding & Barbed Wire",
+      "MIG / TIG / SAW Welding Wires", "Hard Drawn Wires", "Patented Wires",
+    ],
+    grades: [
+      "SAE 1006 / 1008 / 1010 / 1012 (LC CHQ)",
+      "SAE 1018 / 1022 / 10B21 / 10B22 / 10B33 (Boron CHQ)",
+      "SAE 1035 / 1040 / 1045 / 1050 / 1055 (MC)",
+      "SAE 1060 / 1065 / 1070 / 1080 / 1084 (HC)",
+      "SWRH 42B / 52B / 62B / 72A/B / 77B / 82B (JIS G3506)",
+      "C9D – C92D (EN 10016-2 Drawing Quality)",
+      "30MnB4 / 30MnB5 / 38MnB5 (EN 10263-4)",
+      "20MnCr5 / 16MnCr5 / 42CrMo4 (Alloy CHQ)",
+      "11SMn30 / 11SMnPb30 / 1215 / 12L14 (Free-Cutting)",
+      "Fe 410 / Fe 490 (IS 280 – Mild Steel Wire)",
+      "IS 4454 Grade 1 / 2 / 3 / 4 (Spring Wire)",
+      "IS 6003 / ASTM A416 (PC Strand)",
+    ],
+    applications: [
+      { label: "Fasteners (Nuts, Bolts, Rivets)", image: automotiveImg },
+      { label: "Springs & Automotive", image: automotiveImg },
+      { label: "Welding Electrodes", image: weldingImg },
+      { label: "PC Strand & Pre-Stressed Concrete", image: constructionImg },
+      { label: "ACSR Transmission Conductors", image: powerImg },
+      { label: "Tyre Bead & Tyre Cord", image: automotiveImg },
+    ],
+    testing:
+      "Tensile & UTS Test, Reduction of Area, Torsion Test, Wrap / Bend Test, Coiling Test (Spring Wire), Decarburization Depth, Micro-Structure (Pearlite %), Hardness Test, Chemical Composition (Spectro), Zinc Coating Weight (GI), Surface Roughness",
+    certifications: "BIS Certified, ISO 9001:2015, EN 10204 3.1/3.2",
     catalogue: null,
     hidden: true,
   },

@@ -29,6 +29,7 @@ const productMenu: { heading: string; items: { label: string; slug: string }[] }
       { label: "Galvalume Coils (GL)", slug: "galvalume-coils" },
       { label: "Pre-Painted Coils (PPGI/PPGL)", slug: "pre-painted-coils" },
       { label: "Steel Pipes & Tubes", slug: "steel-pipes-tubes" },
+      { label: "Steel Wires & Wire Rods", slug: "steel-wires" },
       { label: "TMT Bars", slug: "tmt-bar" },
       { label: "Sheets", slug: "sheets" },
     ],
