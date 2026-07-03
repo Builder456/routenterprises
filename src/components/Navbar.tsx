@@ -22,6 +22,7 @@ const productMenu: { heading: string; items: { label: string; slug: string }[] }
       { label: "Flat Bars", slug: "flat-bar" },
       { label: "Steel Angles", slug: "steel-angles" },
       { label: "Steel Channels", slug: "steel-channels" },
+      { label: "Steel Beams (HEA/HEB/HEM/IPE/IPN/W)", slug: "steel-beams" },
       { label: "Hot Rolled Coils (HRC)", slug: "hot-rolled-coils" },
       { label: "Cold Rolled Coils (CRC)", slug: "cold-rolled-coils" },
       { label: "Galvanized Coils (GI)", slug: "galvanized-coils" },
@@ -29,6 +30,7 @@ const productMenu: { heading: string; items: { label: string; slug: string }[] }
       { label: "Pre-Painted Coils (PPGI/PPGL)", slug: "pre-painted-coils" },
       { label: "Steel Pipes & Tubes", slug: "steel-pipes-tubes" },
       { label: "TMT Bars", slug: "tmt-bar" },
+      { label: "Sheets", slug: "sheets" },
     ],
   },
   {
@@ -41,7 +43,7 @@ const productMenu: { heading: string; items: { label: string; slug: string }[] }
       { label: "SS Wires", slug: "stainless-steel-wires" },
       { label: "SS Fasteners", slug: "stainless-steel-fasteners" },
       { label: "SS Coils", slug: "stainless-steel-coils" },
-      { label: "SS Sheets & Plates", slug: "stainless-steel-sheets-plates" },
+      { label: "SS Sheets", slug: "sheets" },
     ],
   },
 ];

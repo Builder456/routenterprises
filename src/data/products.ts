@@ -46,6 +46,7 @@ export type Product = {
   certifications?: string;
   catalogue?: string | null;
   hidden?: boolean;
+  additionalOfferings?: string[];
 };
 
 export const products: Product[] = [
@@ -78,6 +79,13 @@ export const products: Product[] = [
     testing:
       "Tensile Test (Screw Driven & Computerized), Impact Test (RT & Sub Zero), Hardness Test, IGC Test, Dye Penetrate Test, Ultrasonic Test, PMI Test (X-ray & OES), Surface Roughness Test",
     catalogue: "/catalogues/Flanges.pdf",
+    additionalOfferings: [
+      "Inconel Flanges (Inconel 600, 601, 625, 718, 825)",
+      "Carbon Steel Flanges (ASTM A105, A350 LF2, A694)",
+      "Hastelloy Flanges (Hastelloy C-22, C-276, B-2, B-3, X)",
+      "Alloy Steel Flanges (ASTM A182 F1, F5, F9, F11, F22, F91)",
+      "Monel Flanges (Monel 400, K-500)",
+    ],
   },
   {
     slug: "stainless-steel-fasteners",
@@ -261,23 +269,29 @@ export const products: Product[] = [
     catalogue: null,
   },
   {
-    slug: "stainless-steel-sheets-plates",
-    name: "Stainless Steel Sheets & Plates",
+    slug: "sheets",
+    name: "Steel & Stainless Steel Sheets",
     brief:
-      "High-integrity stainless steel sheets and plates in a full range of thicknesses, finishes and grades for fabrication, cladding and pressure-vessel service.",
-    desc: "Rout Enterprises supplies and exports premium stainless steel sheets and plates rolled on modern hot and cold reversing mills, followed by annealing, pickling, levelling and precision cut-to-size operations to deliver flat, defect-free products with tight thickness tolerances and superior surface quality. Our sheet range covers 0.30 mm to 6.0 mm thickness, while plates span from 6.0 mm up to 150 mm thickness in widths from 1000 mm to 3000 mm and lengths up to 12000 mm, supplied in mill-edge, trimmed-edge and custom-cut formats. Surface finishes include No.1, 2B, 2D, BA, No.3, No.4, No.8 mirror, hairline, chequered, embossed and PVC-film protected options. Every sheet and plate is supplied with EN 10204 3.1/3.2 mill test certificates conforming to ASTM A240, ASTM A480, ASME SA240, EN 10028-7, EN 10088-2, JIS G4304, JIS G4305 and DIN 17440 specifications. Widely used for pressure vessels, storage tanks, heat exchangers, architectural cladding, kitchen equipment, dairy and pharmaceutical fabrication, chemical processing equipment and shipbuilding, our sheets and plates are trusted by fabricators and EPC contractors across 30+ countries.",
+      "Hot-rolled and cold-rolled sheets in carbon, alloy and stainless grades with a full range of finishes, thicknesses and international standards for fabrication, cladding and pressure-vessel service.",
+    desc: "Rout Enterprises supplies and exports a comprehensive range of Steel and Stainless Steel Sheets rolled on modern hot and cold reversing mills, followed by annealing, pickling, levelling and precision cut-to-size operations to deliver flat, defect-free products with tight thickness tolerances and superior surface quality. Sheets are available from 0.30 mm to 6.0 mm and plates from 6.0 mm up to 150 mm, in widths from 1000 mm to 3000 mm and lengths up to 12000 mm, supplied in mill-edge, trimmed-edge and custom-cut formats. Surface finishes cover No.1, 2B, 2D, BA (Bright Annealed), No.3 satin, No.4 brushed, No.8 mirror, hairline, chequered, embossed and PVC-film protected options. Every lot is supplied with EN 10204 3.1/3.2 mill test certificates. The most widely used international standards and grades include: ASTM A240 / A480 / A167 (SS 201, 202, 301, 304, 304L, 304H, 309, 309S, 310, 310S, 316, 316L, 316Ti, 317L, 321, 321H, 347, 409, 410, 420, 430, 439, 441, 2205 Duplex, 2507 Super Duplex, 904L); ASTM A36 / A283 Gr.C / A516 Gr.60/70 / A572 Gr.50 (carbon & pressure-vessel plates); EN 10025-2 (S235JR, S275JR, S355JR, S355J2, S460), EN 10028-2/-3/-7 (P265GH, P355GH, boiler plates), EN 10088-2 (1.4301, 1.4307, 1.4401, 1.4404, 1.4571, 1.4462, 1.4539); JIS G3101 (SS400), JIS G3131 (SPHC/SPHD/SPHE), JIS G3141 (SPCC/SPCD/SPCE), JIS G4304/G4305 (SUS304, SUS316L, SUS321); DIN 17100 / DIN 17440; and IS 2062 (E250 / E350 / E410 / E450) and IS 6911 (Indian SS sheet standard). Widely used for pressure vessels, storage tanks, heat exchangers, architectural cladding, kitchen equipment, dairy and pharmaceutical fabrication, chemical processing equipment, ship-building hull plates, transformer tanks and general fabrication.",
     image: sheetsPlatesImg,
-    specs: ["ASTM A240 / A480", "EN 10028-7 / EN 10088-2", "0.30 mm – 150 mm"],
+    specs: ["ASTM A240 / A480 / A36 / A516", "EN 10025-2 / EN 10028 / EN 10088-2", "JIS G3101 / G3141 / G4305", "IS 2062 / IS 6911", "0.30 mm – 150 mm"],
     categories: [
-      "Hot Rolled Plates", "Cold Rolled Sheets", "Boiler Quality Plates",
-      "Chequered Plates", "Perforated Sheets", "Embossed Sheets",
-      "2B Finish Sheets", "BA Finish Sheets", "No.4 Brushed Sheets",
-      "Mirror (No.8) Polished Sheets", "PVC Coated Sheets",
+      "SS Cold Rolled Sheets", "SS Hot Rolled Plates", "SS Chequered Plates",
+      "Boiler Quality Plates", "Perforated Sheets", "Embossed Sheets",
+      "MS Hot Rolled Sheets", "MS Cold Rolled Sheets", "MS Chequered Sheets",
+      "2B / BA / No.4 / Mirror Finish SS Sheets", "PVC Coated Sheets",
     ],
     grades: [
-      "201", "202", "301", "304", "304L", "304H", "309", "309S", "310", "310S",
-      "316", "316L", "316Ti", "317L", "321", "321H", "347", "409", "410",
-      "420", "430", "439", "441", "2205 (Duplex)", "2507 (Super Duplex)", "904L",
+      "SS 201 / 202 / 304 / 304L / 304H / 316 / 316L / 316Ti / 321 / 310S / 317L / 347 / 409 / 410 / 430 / 439 / 441",
+      "Duplex 2205 / Super Duplex 2507 / 904L",
+      "1.4301 / 1.4307 / 1.4401 / 1.4404 / 1.4571 / 1.4462 (EN)",
+      "SUS304 / SUS316L / SUS321 (JIS G4304/G4305)",
+      "ASTM A36 / A283 Gr.C / A516 Gr.70 / A572 Gr.50",
+      "S235JR / S275JR / S355JR / S355J2 (EN 10025-2)",
+      "P265GH / P355GH (EN 10028 – Boiler)",
+      "SPHC / SPHD / SPHE (JIS G3131)", "SPCC / SPCD / SPCE (JIS G3141)",
+      "IS 2062 E250 / E350 / E410 / E450", "IS 6911",
     ],
     applications: [
       { label: "Pressure Vessels", image: chemicalImg },
@@ -288,8 +302,9 @@ export const products: Product[] = [
       { label: "Power Generation", image: powerImg },
     ],
     testing:
-      "Tensile Test, Impact Test, Hardness Test, IGC Test, Ultrasonic Test, PMI Test, Flattening Test",
+      "Tensile Test, Impact Test, Hardness Test, IGC Test, Ultrasonic Test, PMI Test, Flattening Test, Surface Roughness Test",
     catalogue: null,
+    hidden: true,
   },
   {
     slug: "hot-rolled-coils",
@@ -586,6 +601,41 @@ export const products: Product[] = [
     ],
     testing: "Yield Strength (0.2% Proof Stress), Ultimate Tensile Strength, Elongation Test, UTS/YS Ratio, Bend & Re-Bend Test, Rib Height & Spacing (per IS 1786), Chemical Composition (S, P, C, N)",
     certifications: "BIS Certified (IS 1786:2008), ISO 9001:2015, EN 10204 3.1",
+    catalogue: null,
+    hidden: true,
+  },
+  {
+    slug: "steel-beams",
+    name: "Steel Beams (HEA / HEB / HEM / IPE / IPN / W Series)",
+    brief:
+      "Hot-rolled parallel-flange and taper-flange structural steel beams — HEA, HEB, HEM, IPE, IPN and W-series — for heavy structural, industrial and infrastructure construction.",
+    desc: "Rout Enterprises supplies and exports the full international range of Hot-Rolled Structural Steel Beams, produced on universal beam mills with tight web and flange tolerances, excellent straightness and superior weldability. Our beam portfolio covers every major series used in global structural engineering:\n\n• IPN Series (DIN 1025-1 / Euronorm 24-62) — narrow, taper-flange I-beams from IPN 80 to IPN 600, used for medium-load structural framing, crane runways and column applications.\n\n• IPE Series (Euronorm 19-57 / EN 10365) — parallel-flange I-beams from IPE 80 to IPE 600 (with IPE-A, IPE-O and IPE-V variants), offering superior bending strength-to-weight ratio, ideal for floor beams, purlins and building frames.\n\n• HEA Series (EN 10365 / DIN 1025-3) — wide-flange 'light' beams from HEA 100 to HEA 1000, providing high bending capacity with reduced weight for columns and beams in commercial buildings and PEB structures.\n\n• HEB Series (EN 10365 / DIN 1025-2) — wide-flange 'medium/standard' beams from HEB 100 to HEB 1000, the workhorse for heavy columns, industrial mezzanines, bridges and offshore structures.\n\n• HEM Series (EN 10365 / DIN 1025-4) — wide-flange 'heavy' beams from HEM 100 to HEM 1000, used for the most demanding column and beam applications where maximum load-bearing and stiffness are required.\n\n• W Series (ASTM A6 / ASTM A992) — American wide-flange beams from W4 to W44 (e.g. W6×9, W8×31, W12×26, W14×90, W16×36, W18×50, W21×62, W24×84, W27×94, W30×108, W36×150), the standard structural section across North America for high-rise buildings, bridges, industrial plants and infrastructure.\n\nAlso available: UB / UC (British Universal Beams & Columns to BS 4-1), S-Series (American Standard I-Beams, ASTM A6), HP-Bearing Piles and Jumbo Beams. Supplied in standard 6 m, 12 m, 15 m and custom cut-to-length pieces, with black, primer-painted, shot-blasted or hot-dip galvanized finishes. Manufactured to EN 10025-2, EN 10365, EN 10034, DIN 1025, ASTM A6, ASTM A36, ASTM A572, ASTM A588, ASTM A992, ASTM A709, BS 4-1, IS 808, IS 12778 and JIS G3192 specifications, with EN 10204 3.1/3.2 mill test certification. Widely used in high-rise buildings, industrial plants, pre-engineered buildings (PEB), road and rail bridges, offshore platforms, power plants, warehouses, stadiums, airport terminals and heavy foundation piling worldwide.",
+    image: steelChannelsImg,
+    specs: ["EN 10025-2 / EN 10365 / EN 10034", "ASTM A6 / A36 / A572 / A992", "DIN 1025-1/2/3/4", "IS 808 / IS 12778", "JIS G3192"],
+    categories: [
+      "IPN Beams (DIN 1025-1)", "IPE Beams (EN 10365)",
+      "HEA Beams (Wide Flange – Light)", "HEB Beams (Wide Flange – Medium)", "HEM Beams (Wide Flange – Heavy)",
+      "W-Series Beams (ASTM A992)", "S-Series American Standard I-Beams",
+      "UB / UC British Universal Beams & Columns", "HP Bearing Piles", "Jumbo Beams",
+    ],
+    grades: [
+      "S235JR / S275JR / S355JR / S355J2 / S460 (EN 10025-2)",
+      "ASTM A36 / A572 Gr.50 / A588 / A992 / A709 Gr.50",
+      "IS 2062 E250 / E350 / E410 / E450",
+      "Q235 / Q345 / Q355 / Q420",
+      "SS400 / SM490 / SM520 (JIS G3101 / G3106)",
+      "BS 4360 Gr.43A / 50B",
+      "St37-2 / St52-3 (DIN 17100)",
+    ],
+    applications: [
+      { label: "High-Rise Buildings", image: constructionImg },
+      { label: "Pre-Engineered Buildings", image: constructionImg },
+      { label: "Road & Rail Bridges", image: constructionImg },
+      { label: "Offshore Platforms", image: marineImg },
+      { label: "Power Plants", image: powerImg },
+      { label: "Industrial Structures", image: automotiveImg },
+    ],
+    testing: "Tensile Test, Yield & Elongation, Impact Test (Charpy), Bend Test, Ultrasonic Test, Dimensional & Straightness Inspection, Chemical Composition Analysis",
     catalogue: null,
     hidden: true,
   },

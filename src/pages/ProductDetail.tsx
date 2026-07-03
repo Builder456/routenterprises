@@ -140,7 +140,33 @@ const ProductDetail = () => {
             </p>
           </motion.section>
 
-          {/* Additional Materials & Products */}
+          {/* We Also Offer (Additional Materials) */}
+          {product.additionalOfferings && product.additionalOfferings.length > 0 && (
+            <motion.section
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="mt-10 bg-card border border-border rounded-lg p-6 shadow-card"
+            >
+              <div className="flex items-center gap-2 mb-3">
+                <CheckCircle2 className="w-5 h-5 text-ember" />
+                <h2 className="font-display font-bold text-xl text-foreground">We Also Offer</h2>
+              </div>
+              <p className="text-sm text-muted-foreground mb-4">
+                Beyond stainless steel, we manufacture and export {product.name.toLowerCase()} in a range of high-performance alloy and specialty materials to serve the most demanding corrosive, cryogenic and high-temperature service conditions:
+              </p>
+              <ul className="grid md:grid-cols-2 gap-2">
+                {product.additionalOfferings.map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-sm text-foreground/90">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-ember flex-shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </motion.section>
+          )}
+
 
 
 
