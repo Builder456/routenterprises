@@ -604,6 +604,41 @@ export const products: Product[] = [
     catalogue: null,
     hidden: true,
   },
+  {
+    slug: "steel-beams",
+    name: "Steel Beams (HEA / HEB / HEM / IPE / IPN / W Series)",
+    brief:
+      "Hot-rolled parallel-flange and taper-flange structural steel beams — HEA, HEB, HEM, IPE, IPN and W-series — for heavy structural, industrial and infrastructure construction.",
+    desc: "Rout Enterprises supplies and exports the full international range of Hot-Rolled Structural Steel Beams, produced on universal beam mills with tight web and flange tolerances, excellent straightness and superior weldability. Our beam portfolio covers every major series used in global structural engineering:\n\n• IPN Series (DIN 1025-1 / Euronorm 24-62) — narrow, taper-flange I-beams from IPN 80 to IPN 600, used for medium-load structural framing, crane runways and column applications.\n\n• IPE Series (Euronorm 19-57 / EN 10365) — parallel-flange I-beams from IPE 80 to IPE 600 (with IPE-A, IPE-O and IPE-V variants), offering superior bending strength-to-weight ratio, ideal for floor beams, purlins and building frames.\n\n• HEA Series (EN 10365 / DIN 1025-3) — wide-flange 'light' beams from HEA 100 to HEA 1000, providing high bending capacity with reduced weight for columns and beams in commercial buildings and PEB structures.\n\n• HEB Series (EN 10365 / DIN 1025-2) — wide-flange 'medium/standard' beams from HEB 100 to HEB 1000, the workhorse for heavy columns, industrial mezzanines, bridges and offshore structures.\n\n• HEM Series (EN 10365 / DIN 1025-4) — wide-flange 'heavy' beams from HEM 100 to HEM 1000, used for the most demanding column and beam applications where maximum load-bearing and stiffness are required.\n\n• W Series (ASTM A6 / ASTM A992) — American wide-flange beams from W4 to W44 (e.g. W6×9, W8×31, W12×26, W14×90, W16×36, W18×50, W21×62, W24×84, W27×94, W30×108, W36×150), the standard structural section across North America for high-rise buildings, bridges, industrial plants and infrastructure.\n\nAlso available: UB / UC (British Universal Beams & Columns to BS 4-1), S-Series (American Standard I-Beams, ASTM A6), HP-Bearing Piles and Jumbo Beams. Supplied in standard 6 m, 12 m, 15 m and custom cut-to-length pieces, with black, primer-painted, shot-blasted or hot-dip galvanized finishes. Manufactured to EN 10025-2, EN 10365, EN 10034, DIN 1025, ASTM A6, ASTM A36, ASTM A572, ASTM A588, ASTM A992, ASTM A709, BS 4-1, IS 808, IS 12778 and JIS G3192 specifications, with EN 10204 3.1/3.2 mill test certification. Widely used in high-rise buildings, industrial plants, pre-engineered buildings (PEB), road and rail bridges, offshore platforms, power plants, warehouses, stadiums, airport terminals and heavy foundation piling worldwide.",
+    image: steelChannelsImg,
+    specs: ["EN 10025-2 / EN 10365 / EN 10034", "ASTM A6 / A36 / A572 / A992", "DIN 1025-1/2/3/4", "IS 808 / IS 12778", "JIS G3192"],
+    categories: [
+      "IPN Beams (DIN 1025-1)", "IPE Beams (EN 10365)",
+      "HEA Beams (Wide Flange – Light)", "HEB Beams (Wide Flange – Medium)", "HEM Beams (Wide Flange – Heavy)",
+      "W-Series Beams (ASTM A992)", "S-Series American Standard I-Beams",
+      "UB / UC British Universal Beams & Columns", "HP Bearing Piles", "Jumbo Beams",
+    ],
+    grades: [
+      "S235JR / S275JR / S355JR / S355J2 / S460 (EN 10025-2)",
+      "ASTM A36 / A572 Gr.50 / A588 / A992 / A709 Gr.50",
+      "IS 2062 E250 / E350 / E410 / E450",
+      "Q235 / Q345 / Q355 / Q420",
+      "SS400 / SM490 / SM520 (JIS G3101 / G3106)",
+      "BS 4360 Gr.43A / 50B",
+      "St37-2 / St52-3 (DIN 17100)",
+    ],
+    applications: [
+      { label: "High-Rise Buildings", image: constructionImg },
+      { label: "Pre-Engineered Buildings", image: constructionImg },
+      { label: "Road & Rail Bridges", image: constructionImg },
+      { label: "Offshore Platforms", image: marineImg },
+      { label: "Power Plants", image: powerImg },
+      { label: "Industrial Structures", image: automotiveImg },
+    ],
+    testing: "Tensile Test, Yield & Elongation, Impact Test (Charpy), Bend Test, Ultrasonic Test, Dimensional & Straightness Inspection, Chemical Composition Analysis",
+    catalogue: null,
+    hidden: true,
+  },
 ];
 
 export const getProductBySlug = (slug: string) => products.find((p) => p.slug === slug);
