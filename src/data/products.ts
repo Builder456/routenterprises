@@ -79,6 +79,13 @@ export const products: Product[] = [
     testing:
       "Tensile Test (Screw Driven & Computerized), Impact Test (RT & Sub Zero), Hardness Test, IGC Test, Dye Penetrate Test, Ultrasonic Test, PMI Test (X-ray & OES), Surface Roughness Test",
     catalogue: "/catalogues/Flanges.pdf",
+    additionalOfferings: [
+      "Inconel Flanges (Inconel 600, 601, 625, 718, 825)",
+      "Carbon Steel Flanges (ASTM A105, A350 LF2, A694)",
+      "Hastelloy Flanges (Hastelloy C-22, C-276, B-2, B-3, X)",
+      "Alloy Steel Flanges (ASTM A182 F1, F5, F9, F11, F22, F91)",
+      "Monel Flanges (Monel 400, K-500)",
+    ],
   },
   {
     slug: "stainless-steel-fasteners",
