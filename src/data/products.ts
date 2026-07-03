@@ -18,6 +18,9 @@ import steelChannelsImg from "@/assets/steel-channels.jpg";
 import prePaintedCoilsImg from "@/assets/pre-painted-coils.jpg";
 import steelPipesTubesImg from "@/assets/steel-pipes-tubes.jpg";
 import tmtBarImg from "@/assets/tmt-bar.jpg";
+import steelBeamsImg from "@/assets/steel-beams.jpg";
+import msRoundBarImg from "@/assets/ms-round-bar.jpg";
+import steelWiresImg from "@/assets/steel-wires.jpg";
 
 import oilGasImg from "@/assets/applications/oil-gas.jpg";
 import chemicalImg from "@/assets/applications/chemical.jpg";
