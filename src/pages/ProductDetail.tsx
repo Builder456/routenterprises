@@ -80,7 +80,9 @@ const ProductDetail = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
             >
               <p className="text-ember font-display font-semibold text-sm uppercase tracking-[0.2em] mb-3">
-                Premium Stainless Steel
+                {/^(stainless-steel-|bright-bars$|seamless-pipes-tubes$|sheets$)/.test(product.slug)
+                  ? "Premium Stainless Steel"
+                  : "Premium Steel Products"}
               </p>
               <h1 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-4">
                 {product.name}
