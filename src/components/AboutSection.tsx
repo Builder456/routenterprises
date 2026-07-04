@@ -27,8 +27,11 @@ const AboutSection = () => {
           <h2 className="font-display text-3xl md:text-5xl font-bold text-foreground mb-6">
             Trusted Stainless Steel Flanges, Fasteners & Bright Bars Exporter from India
           </h2>
-          <p className="text-muted-foreground text-lg leading-relaxed">
+          <p className="text-muted-foreground text-lg leading-relaxed mb-5">
             Rout Enterprises is a leading stainless steel flanges exporter, fasteners supplier, bright bars supplier, and seamless pipes distributor based in Boisar, Maharashtra, India. With over 2+ years of experience in the steel industry, we specialize in supplying and exporting premium ASTM A182 stainless steel flanges, ANSI B16.5 pipe flanges, DIN standard fasteners, SS 304/316 bolts and nuts, wire rods, stainless steel profiles, and precision bright bars to industries across the USA, UK, Germany, UAE, Saudi Arabia, Singapore, and Australia. Our commitment to ISO-certified quality, competitive pricing, and on-time global delivery has made us a preferred partner for oil & gas, petrochemical, construction, and marine sectors worldwide.
+          </p>
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            Beyond stainless steel, our carbon and alloy steel portfolio covers Hot Rolled Coils (HRC), Cold Rolled Coils (CRC), Galvanized (GI) and Galvalume (GL) Coils, Pre-Painted (PPGI/PPGL) Coils, TMT Rebars (Fe 500/550/600 to IS 1786), Structural Beams (HEA, HEB, HEM, IPE, IPN & W-Series), Angles, Channels, Round, Hexagon & Flat Bars, ERW/GI Pipes & Hollow Sections and Wire Rods & Drawn Wires — manufactured to IS 2062, IS 1786, ASTM A36/A572/A992/A653/A792, EN 10025-2, EN 10346, JIS G3101/G3131/G3141/G3302 and API 5L specifications, and referenced to JSW Steel and Karamtara Engineering catalogues to guarantee world-class dimensional accuracy and metallurgical consistency.
           </p>
         </motion.div>
 
