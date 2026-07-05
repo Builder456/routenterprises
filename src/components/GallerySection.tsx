@@ -13,14 +13,20 @@ import galleryHexBars from "@/assets/gallery-hex-bars.jpeg";
 import galleryRoundBars from "@/assets/gallery-round-bars.jpeg";
 import galleryFasteners1 from "@/assets/gallery-fasteners-1.jpeg";
 import galleryFasteners2 from "@/assets/gallery-fasteners-2.jpeg";
+import galleryCoilsHr from "@/assets/gallery-coils-hr.jpg";
+import galleryCoilsStacked from "@/assets/gallery-coils-stacked.jpeg";
+import galleryCoilsCr from "@/assets/gallery-coils-cr.jpeg";
 
 const images = [
   { src: gallery1, alt: "Stainless steel flanges stacked on pallets in factory" },
+  { src: galleryCoilsHr, alt: "Hot rolled steel coil on factory floor" },
   { src: gallery2, alt: "Large stainless steel ring flanges close-up" },
   { src: galleryFasteners1, alt: "Stainless steel bolts, nuts and washers collection" },
+  { src: galleryCoilsStacked, alt: "Stacked hot rolled steel coils in warehouse" },
   { src: galleryWireRods, alt: "Stainless steel wire rods coils" },
   { src: gallery3, alt: "Precision machined stainless steel plate flanges" },
   { src: galleryAngles1, alt: "Stainless steel angle profiles stacked" },
+  { src: galleryCoilsCr, alt: "Cold rolled steel coil ready for dispatch" },
   { src: galleryHexBars, alt: "Stainless steel hexagonal bright bars bundle" },
   { src: gallery4, alt: "Bulk stainless steel weld neck flanges production" },
   { src: galleryFasteners2, alt: "Stainless steel nuts and bolts close-up" },
