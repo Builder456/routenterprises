@@ -33,7 +33,7 @@ const industries = [
     image: foodImg,
     description: "Hygienic-grade stainless steel for food-safe equipment, conveyor systems and processing machinery.",
     applications: ["Conveyor Belts", "Mixing Equipment", "Kitchen Ware", "Grill Racks", "Processing Lines"],
-    products: "Wires, Fasteners, Flanges, Bright Bars",
+    products: "Wires, Fasteners, Flanges, Steel Bars (20 to 200 mm), Flat Bars (60×7 to 101×38)",
   },
   {
     name: "Power Generation",
