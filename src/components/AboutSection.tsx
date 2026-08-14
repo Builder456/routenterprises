@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Factory, Truck, Users, CheckCircle } from "lucide-react";
-import steelVideo from "../../public/videos/steel-manufacturing.mp4.asset.json";
 
 const highlights = [
   { icon: Factory, title: "State-of-Art Sourcing", desc: "Equipped with modern machinery and quality control systems." },
@@ -16,25 +15,8 @@ const AboutSection = () => {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="about" ref={ref} className="relative py-24 overflow-hidden">
-      {/* Background video */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="absolute inset-0 w-full h-full object-cover"
-          aria-label="Steel manufacturing process video background"
-        >
-          <source src={steelVideo.url} type="video/mp4" />
-        </video>
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/90 via-background/80 to-background/90" />
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10">
+    <section id="about" ref={ref} className="py-24 bg-gradient-steel">
+      <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -61,7 +43,7 @@ const AboutSection = () => {
               animate={inView ? { opacity: 1, y: 0, scale: 1 } : {}}
               transition={{ delay: 0.2 + i * 0.12, duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
               whileHover={{ y: -6, transition: { duration: 0.3 } }}
-              className="bg-card/90 backdrop-blur-sm rounded-lg p-6 shadow-card hover:shadow-card-hover transition-shadow"
+              className="bg-card rounded-lg p-6 shadow-card hover:shadow-card-hover transition-shadow"
             >
               <div className="w-12 h-12 rounded-md bg-primary/10 flex items-center justify-center mb-4">
                 <h.icon className="w-6 h-6 text-primary" />
