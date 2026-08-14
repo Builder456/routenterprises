@@ -26,7 +26,6 @@ const AboutSection = () => {
           playsInline
           preload="auto"
           className="absolute inset-0 w-full h-full object-cover"
-          poster="/placeholder.svg"
           aria-label="Steel manufacturing process video background"
         >
           <source src={steelVideo.url} type="video/mp4" />
